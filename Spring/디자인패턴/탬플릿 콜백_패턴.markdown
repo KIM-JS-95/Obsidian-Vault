@@ -1,0 +1,127 @@
+
+
+# 🚀 스프링에서 디자인 패턴의 중요성
+
+`디자인 패턴`은 실제 개발 현장에서 비즈니스 요구 사항을 프로그래밍으로 처리하면서 만들어진 다양한 해결책 중에서 많은 사람들이
+인정한 가장 효율적인 예시를 정리한 패턴의 집합이다.
+
+## 🌠 탭플릿 콜백 메서드 패턴 - 개방 폐쇄 원칙(OCP), 의존 역전 원칙(DIP)
+
+
+**전략 패턴의 변형**으로, 스프링 3대 프로그래밍 모델 중 하나인 `DI(의존성 주입)`에서 사용하는 특별한 형태의 전략 패턴이다.
+
+`탬플릿 콜백 패턴`의 특징은 전략 패턴의 메서드를 익명 내부 클래스로 정의하여 사용한다는 특징이 있다.
+
+### 템플릿 콜백 패턴 - 적용 전 (전략 패턴 상태)
+
+```java
+
+public interface Strategy {
+    public abstract void runStrategy();
+}
+
+public class Soldier {
+    void runContext(Strategy strategy) {
+        System.out.println("전투 시작");
+        strategy.runStrategy();
+        System.out.println("전투 종료");
+    }
+}
+
+
+public class Client {
+    public static void main(String[] args) {
+        Soldier rambo = new Soldier();
+
+        rambo.runContext(new Strategy() {
+            @Override
+            public void runStrategy() {
+                System.out.println("총! 총초종총 총! 총!");
+            }
+        });
+
+        System.out.println();
+
+        rambo.runContext(new Strategy() {
+            @Override
+            public void runStrategy() {
+                System.out.println("칼! 카가갈 칼! 칼!");
+            }
+        });
+
+        System.out.println();
+
+        rambo.runContext(new Strategy() {
+            @Override
+            public void runStrategy() {
+                System.out.println("도끼! 독독..도도독 독끼!");
+            }
+        });
+    }
+}
+```
+
+`Client` 클래스 내부에서 `.rumContext()` 메소드 호출일 반복적으로 일어나고 있다.
+
+또한 이전 `전략 패턴`에서 사용된 활 / 총 / 검 의 클래스는 익명 **내부 클래스의 등장으로 필요가 없게 된다.**
+
+
+### 템플릿 콜백 패턴 - 적용 후
+
+```java
+
+public interface Strategy {
+    public abstract void runStrategy();
+}
+
+public class Client {
+    public static void main(String[] args) {
+        Soldier rambo = new Soldier();
+
+        rambo.runContext("총! 총초종총 총! 총!");
+
+        System.out.println();
+
+        rambo.runContext("칼! 카가갈 칼! 칼!");
+
+        System.out.println();
+
+        rambo.runContext("도끼! 독독..도도독 독끼!");
+    }
+}
+
+public class Soldier {
+    void runContext(String weaponSound) {
+        System.out.println("전투 시작");
+        executeWeapon(weaponSound).runStrategy();
+        System.out.println("전투 종료");
+    }
+
+    private Strategy executeWeapon(final String weaponSound) {
+        return new Strategy() {
+            @Override
+            public void runStrategy() {
+                System.out.println(weaponSound);
+            }
+        };
+    }
+}
+
+```
+
+클라이언트가 가지는 코드가 간결해 졌다.
+
+스프링은 이런 형식으로 리팩터링된 템플릿 콜백 패턴을 DI에 적극 활용하고 있기에 이러한 패턴을 이해하는 것이 중요하다.
+
+### 🌠 정리
+
+> 전략을 익명 내부 클래스로 구현한 전략 패턴
+
+
+
+
+## 🧾 Reference
+- [깃헙 - 스프링 입문 교재](https://github.com/expert0226/oopinspring)
+- [책 - 스프링을 입문을 위한 자바 객체 지향의 원리와 이해](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=55641908)
+
+
