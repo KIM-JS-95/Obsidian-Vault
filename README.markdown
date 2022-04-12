@@ -1,6 +1,6 @@
 # 🎆 Today I Learned 🎆
 
-[Spring]("Spring/README.Markdown")
+[Spring](./Spring/README.markdown)
 [JAVA](#JAVA)
 [Python](#Python)
 [ETC](#ETC)
