@@ -1,15 +1,17 @@
----
-layout: post 
-title:  "객체지향 쿼리 JPQL"
-date:   2021-06-21 12:05:21 +0800 
-tags: JPA SPRING JPQL 
-color: rgb(154,133,255)
-subtitle: 'JPQL'
---- 
 
-## 객체지향 쿼리 JPQL
+## JPQL(Java Persistence Query Language) ?
+JPA의 구성요소중 하나이며  SQL문법을 추상화 시킨 객체지향 쿼리이다.
+객체 중심의 문법인 만큼 특정 DB에 의존하지 않는다. 엔티티 조회, 묵시적 조인, 다형성 지원으로 SQL 보다 간결하다.
 
-### SQL vs JPQL
+### 왜 개발자들은 JPA를 두고 JPQL를 사용할까?
+JPA 문법은 CRUD 명령어 처리에서 효율적인 명령어 기능을 제공하지만 `검색` 명령어에 대해서는 비효율적으로 작동한다.
+
+객체중심의 JPA는 검색을 할때도 테이블이 아닌 엔티티 객체를 대상으로 검색해야하는데 
+DB의 모든 데이터를 호출후 엔티티 객체로 변경하여 처리하는 것은 불가능하다.
+
+때문에 개발자들은 특수한 경우에 대처할 수 있도록 쿼리를 사용할 수 있도록 만들어 놓은 것이 JPQL인 것이다.
+
+## SQL vs JPQL
 
 * 테이블이 아닌 객체를 대상으로 검색하는 객체지향 쿼리
 * <u>SQL을 추상화</u>해서 특정 DB SQL에 의존하지 않는다.
@@ -19,19 +21,7 @@ subtitle: 'JPQL'
 | 대상 | DATA | 객체 |
 | 쿼리 형태 | DATA 중심의 쿼리 | 객체 중심의 쿼리 |
 
-### JPQL(정적 쿼리) ?
-
-JPQL(Java Persistence Query Language)은 객체를 조회하는 객체지향 쿼리이다. 객체 중심의 문법인 만큼 특정 DB에 의존하지 않는다. 엔티티 조회, 묵시적 조인, 다형성 지원으로 SQL
-보다 간결하다.
-> 다형성(polymorphism) ?
->
-> 하나의 객체가 여러 가지 타입을 가질 수 있는 것을 의미합니다. 자바에서는 이러한 다형성을 부모 클래스 타입의 참조 변수로 자식 클래스 타입의 인스턴스를 참조할 수 있도록 하여 구현
->
->다형성은 상속, 추상화와 더불어 객체 지향 프로그래밍을 구성하는 중요한 특징 중 하나입니다.
-
-### JPQL 쿼리와 SQL 쿼리 차이
-
-#### JPQL(문자형태)
+### JPQL(문자형태)
 
 * select_문 ::= select_절 from_절 where_절 groupby_절 having_절 orderby_절
 
@@ -41,11 +31,13 @@ JPQL(Java Persistence Query Language)은 객체를 조회하는 객체지향 쿼
 
 SELECT, UPDATE, DELETE 문 사용이 가능하지만 INSERT문은 없다.
 
-#### SQL(문자형태)
+### SQL(문자형태)
 
 * SELECT m FROM Member AS m WHERE m.username = 'leveloper'
 
-#### 차이점
+#### SQL과 다른 사용방법의 JPQL
+
+JPQL는 `객체 지향의 쿼리 문법`으로서 단순 SQL과는 다른 다른 사용 방법을 제공한다.
 
 1. 대소문자 구분
 
@@ -60,6 +52,7 @@ JPQL에서 사용한 Member는 클래스 명이 아니라 엔티티 명이다. �
 Member AS m을 보면 Member에 m이라는 별칭을 주었다. JPQL은 별칭을 필수로 사용해야 한다. AS를 생략해서 Member m처럼 사용해도 된다.
 
 #### SQL, JPQL의 문제점
+
 * 문자열 형태의 SQL, JPQL
 
 * 컴파일 시점에 알 수 있는 방법이 없다.
@@ -68,9 +61,9 @@ Member AS m을 보면 Member에 m이라는 별칭을 주었다. JPQL은 별칭�
 
 ---
 
-### Other 쿼리
+## Other 쿼리
 
-#### 1. Criteria 쿼리(코드형태)
+### 1. Criteria 쿼리(코드형태)
 
 Criteria는 JPQL을 생성하는 빌더 클래스이며 <u>프로그래밍 코드로 JPQL을 작성할 수 있다는 장점이있다.</u>
 문제는 JPQL에서 쿼리를 작성하여 배포까지 가능해도 <u>해당 쿼리가 런타임 시점에 오류가 발생</u> 한다는 점이다. 이것은 문자기반 쿼리의 단점이다.
@@ -100,7 +93,7 @@ List<MemberJPQL> members = typeQuery.getResultList();
 
 ---
 
-#### 2. QueryDSL(코드형태)
+### 2. QueryDSL(코드형태)
 
 Criteria 쿼리와 동일하게 JPQL 빌더 역할을 가지며 단순하고 사용하기 편리하다. 단 비표준화 형태의 쿼리
 
@@ -133,7 +126,7 @@ List<Member> list =
 
 ---
 
-#### 3. 네이티브 SQL(문자형태)
+### 3. 네이티브 SQL(문자형태)
 JPA는 SQL이 지원하는 대부분의 문법과 SQL 함수들을 지원하지만 <u>특정 데이터베이스에 종속적인 기능은
 잘 지원하지 않는다.</u> 만일 특정 DB를 조회할 경우 JPA는 SQL을 직접 사용할 수 있는 기능을 지원하며
 이를 <u>네이티브 SQL이라고 한다.</u>
@@ -153,7 +146,7 @@ List<Member> resultList = em.createNativeQuert(sql, Member.class).getResultList(
 > * 특정 DB에 의존하는 만큼 DB가 변경될 경우 네이티브 SQL 쿼리도 수정해야한다.
 
 
-### 쿼리 객체의 반환
+## 쿼리 객체의 반환
 작성한 JPQL을 실행 하려면 쿼리 객체를 만들어야 하며 객체는 TypeQuery, Query가 있으며 반환 타입의 명확한 지정의 유무에 따라
 달리 사용할 수 있다. (명확: TypeQuery / 불명확: Query)
 
