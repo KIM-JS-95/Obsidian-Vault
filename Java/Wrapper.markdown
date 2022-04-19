@@ -1,11 +1,4 @@
 ---
-layout: post 
-title: "Wrapper 클래스란?"
-date: 2022-04-13 10:05:21 +0800
-tags: JAVA
-color: rgb(98,170,255)
-subtitle: 내가 궁금한 지식
----
  
 # 자바의 자료형 구분
 
