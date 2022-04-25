@@ -1,11 +1,4 @@
----
-layout: post
-title:  "(N+1) Error"
-date:   2021-06-17
-tags: SpringBoot Mapping JPA
-color: rgb(154,133,255)
-subtitle: 'Spring Boot Mapping Error'
----
+
 ## Background
 ### 준영속 상태와 지연로딩
 스프링 커테이너는 트랜잭션 범위의 영속성 컨텍스트 전략을 기본으로 사용한다.

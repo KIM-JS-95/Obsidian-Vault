@@ -1,14 +1,4 @@
----
-layout: post
-title:  "비동기 데이터 전송 ajax"
-date:   2021-08-16 14:05:21 +0800
-tags: SpringBoot ajax
-color:  rgb(154,133,255)
-subtitle: ajax 비동기 통신
----
-
-
-### AJAX(Asynchronous JavaScript and XML)
+# AJAX(Asynchronous JavaScript and XML)
 
 Ajax는 빠르게 동작하는 동적인 웹 페이지를 만들기 위한 개발 기법 중 하나
 
@@ -16,14 +6,14 @@ Ajax는 웹 페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 
 
 즉 Ajax를 이용하면 백그라운드 영역에서 서버와 통신하여, 그 결과를 웹 페이지의 일부분에만 표시할 수 있다.
 
-### AJAX 장점
+## AJAX 장점
 
 1. 웹 페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 일부분만을 갱신할 수 있다.
 2. 웹 페이지가 로드된 후에 서버로 데이터 요청을 보낼 수 있다.
 3. 웹 페이지가 로드된 후에 서버로부터 데이터를 받을 수 있다.
 4. 백그라운드 영역에서 서버로 데이터를 보낼 수 있다.
 
-### Ajax의 한계
+## Ajax의 한계
 
 1. Ajax는 클라이언트가 서버에 데이터를 요청하는 `클라이언트 풀링 방식`을 사용하므로, 서버 푸시 방식의 실시간 서비스는 만들 수 없다.
 2. Ajax로는 바이너리 데이터를 보내거나 받을 수 없다.
@@ -31,7 +21,7 @@ Ajax는 웹 페이지 전체를 다시 로딩하지 않고도, 웹 페이지의 
 4. 클라이언트의 PC로 Ajax 요청을 보낼 수는 없다.
   
 
-### 동작원리
+## 동작원리
 
 Ajax는 기존에 사용되던 여러 기술을 함께 사용하여, 웹 페이지의 **일부분만을 갱신할 수 있도록 해주는 개발 기법이다.**
 
@@ -47,7 +37,7 @@ Ajax는 기존에 사용되던 여러 기술을 함께 사용하여, 웹 페이�
 ![동작원리](http://tcpschool.com/lectures/img_ajax_other_application.png)
 
 
-### Ajax 메소드
+## Ajax 메소드
 
 [ajax 상세 메소드 리스트](https://www.tutorialsteacher.com/jquery/jquery-ajax-method)
 
@@ -120,5 +110,5 @@ var data= {}; 는 게시판 글 작성시 작성된 데이터 객체를 각 변�
 | 13:00 ~ 17:00 | 11:00 ~ 02:00 |
 
 ### 🧾Reference
-1. [Ajax 기초](http://tcpschool.com/ajax/ajax_intro_basic)
-2. [Ajax 상세](http://tcpschool.com/jquery/jq_ajax_method)
+- [Ajax 기초](http://tcpschool.com/ajax/ajax_intro_basic)
+- [Ajax 상세](http://tcpschool.com/jquery/jq_ajax_method)

@@ -1,11 +1,4 @@
----
-layout: post
-title:  "DB암호화 기법"
-date:   2021-09-09 14:05:21 +0800
-tags: DB
-color:  rgb(154,133,255)
-subtitle: 유닛테스트 방법
----
+
 ## DB 암호화 기법
 
 ### 개요

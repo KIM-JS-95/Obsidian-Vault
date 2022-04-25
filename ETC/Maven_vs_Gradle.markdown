@@ -1,11 +1,3 @@
----
-layout: post 
-title:  "Gradle 과 Maven 차이"
-date:   2022-03-19 12:05:21 +0800 
-tags: 면접 gradle maven
-color: rgb(98,170,255)
-subtitle: 빌트 툴에 대해 알아보자
---- 
 
 ## 빌드 관리 도구?
 

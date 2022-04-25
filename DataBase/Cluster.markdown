@@ -1,11 +1,4 @@
----
-layout: post
-title:  "What is a Cluster"
-date:   2021-09-10 14:05:21 +0800
-tags: Cluster NonCluster Index DB
-color:  rgb(154,133,255)
-subtitle: 테이블 구분 방법에 따른 인덱싱 방법
----
+
 ## 서론
 
 ### what is Cluster
