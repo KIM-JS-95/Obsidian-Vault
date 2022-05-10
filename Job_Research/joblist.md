@@ -2,7 +2,9 @@
 
 [알서포트](#httpswwwwantedcokrwd30956)
 
-[단비교육](#단비교육httpswww.wantedcokrwd97099)
+[단비교육](#httpswwwwantedcokrwd97099)
+
+[어마케팅코리아 웹 개발자](#httpswwwwantedcokrwd110734)
 
 # 관련 직군 공고
 ## [알서포트](https://www.wanted.co.kr/wd/30956)
