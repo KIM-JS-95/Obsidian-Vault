@@ -1,8 +1,6 @@
 # 🎆 Today I Learned 🎆
 
-
-
-## 🎇 [Spring](./Spring/README.markdown)
+## 🍃 [Spring](./Spring/README.markdown)
 
 ### ✨ [Basic](./Spring/Basic/README.markdown)
 - [스프링](./Spring/Basic/스프링.markdown)
@@ -39,21 +37,41 @@
 ----
 
 ## 🎇 [JAVA](./Java/README.markdown)
+
+- [Servlet](./Java/Servlet.markdown)
+- [Wrapper](./Java/Wrapper.markdown)
+- [스트림](./Java/스트림.markdown)
+- [익명클래스_익명내부클래스](./Java/익명클래스_익명내부클래스.markdown)
+- [스레드 특성](./Java/스레드_특성.markdown)
+- [람다식](./Java/람다식.markdown)
+- [Vector (งᓀ‸ᓂ)ง ArrayList (งᓀ‸ᓂ)ง LinkedList](./Java/Vector_vs_ArrayList_vs_LinkedList.markdown)
+
+
 ### ✨ [자바 구조](./Java/자바구조/README.markdown)
 - [자바구조](./자바구조)
 - [자바 메모리](./자바_메모리.markdown)
 - [자바 프로그램 구동](./자바프로그램구동.markdown)
 - [객체지향프로그래밍](./객체지향프로그래밍(OOP).markdown)
 
-### ✨ [임시](./Java/)
-- [스레드 특성](./Java/스레드_특성.markdown)
-- [람다식](./Java/람다식.markdown)
-- [Vector (งᓀ‸ᓂ)ง ArrayList (งᓀ‸ᓂ)ง LinkedList](./Java/Vector_vs_ArrayList_vs_LinkedList.markdown)
-
 ----
 
 ## 🎇 [JPA](./JPA/README.markdown)
-### ✨
+- [Context](./JPA/Context.markdown)
+- [JPA](./JPA/JPA.markdown)
+- [JPQL](./JPA/JPQL.markdown)
+- [OOP Query](./JPA/OOP_query.markdown)
+- [ORM](./JPA/ORM.markdown)
+- [단방향 양방향](./JPA/단방향_양방향.markdown)
+- [상속관계 매핑](./JPA/상속관계매핑.markdown)
+- [식별과 비식별](./JPA/식별과%20비식별.markdown)
+- [엔티티, 값타입](./JPA/엔티티,값타입.markdown)
+- [프록시](./JPA/프록시.markdown)
+
+----
+
+## 🐋 [Docekr](./Docker/README.markdown)
+- [도커](./Docker/도커.markdown)
+- [networt](./Docker/network.markdown)
 
 ----
 
@@ -62,13 +80,25 @@
 
 ----
 
+---
+## 💽 [Data Base](./DataBase/readme.markdown)
+- [(N+1)Error](./DataBase/(N+1)Error.markdown)
+- [Cluster](./DataBase/Cluster.markdown)
+- [CTE](./DataBase/CTE.markdown)
+- [DB암호화기법](./DataBase/DB암호화기법.markdown)
+- [제약조건](./DataBase/제약조건.markdown)
+
+---
 
 ## 🎇 [ETC](./ETC/README.markdown)
+- [AJAX](./ETC/AJAX.markdown)
+- [API](./ETC/API.markdown)
+- [JS와AJAX관계](./ETC/JS와AJAX관계.markdown)
+- [LiveServer Issue](./ETC/LiveServer%20issue.markdown)
+- [Maven_vs_Gradle](./ETC/Maven_vs_Gradle.markdown)
+- [Servlet and JSP](./ETC/Servlet_and_JSP.markdown)
 
-
-----
-
-
+---
 ## 🎇 [코드리뷰](./코드리뷰/README.markdown)
 
 
