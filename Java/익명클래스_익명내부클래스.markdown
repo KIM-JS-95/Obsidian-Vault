@@ -250,6 +250,9 @@ public class AnonymousInnerTest {
 }
 ```
 
+
+
+
 ## Reference
 
 - [TCP스쿨](http://www.tcpschool.com/java/java_usingClass_innerClass)
