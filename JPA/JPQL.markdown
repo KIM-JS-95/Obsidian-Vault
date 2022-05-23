@@ -81,7 +81,7 @@ Query q = em.createQuery("SELECT m.username, m.age FROM Member m", Member.class)
 select m from Member join fetch m.team
 ```
 
-### @OneToMany(fetch = "FetchType.Lazy") 와 페치 조인의 차이
+### 글로벌 페치 조인 과 페치 조인의 차이
 
 페치 조인을 사용하면 SQL 한 번으로 연관된 엔티티들을 함께 조횔할 수 있어서 SQL 호출 횟수를 줄여 성능을 최적화 할 수 있다.
 
