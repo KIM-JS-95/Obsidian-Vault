@@ -47,6 +47,8 @@ EX) NginX, Apache Web Server
 ![](https://user-images.githubusercontent.com/33229855/121800240-b24eae80-cc6b-11eb-811d-59634c440da7.png)
 
 ## 로드 밸런싱
+
+![](https://miro.medium.com/max/1000/1*H3U0Gud5ztpVTmkuVTwPoA.jpeg)
 서버가 부담하는 부하를 분산해주는 장치 혹은 기술이다. 
 
 네트워크에서 IP 주소와 MAC 주소를 이용해 목적지 IP 주소를 찾아가고 출발지로 되돌아오는 구조이다.
