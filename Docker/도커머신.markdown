@@ -1,0 +1,22 @@
+# 도커머신
+
+컨테이너화된 애플리케이션이 있는 경우 Docker를 사용하여 로컬로 실행하거나 
+Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배포할 수 있어야 한다.**
+
+원격 가상 머신(VM)을 쉽게 생성하고 이러한 컨테이너를 원격으로 관리할 수 있는 도구를 `docker-machine` 이라고 합니다 .
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F995158475E1D5BB70B)
+
+
+## 도커 머신의 목적
+
+`docker-machine`의 목적은 애플리케이션을 위한 배포 환경을 만들고 실행되는 모든 서비스를 관리하려는 경우이다.
+
+연결하려는 VM의 경우 Azura, AWS 등과 같은 대상이 될 수 있아
+
+![](https://www.macadamian.com/wp-content/uploads/2017/01/1-KO-vKqNqGk_8feDcpePvQQ.png.webp)
+
+#Reference
+
+- [What is docker-machine?](https://www.macadamian.com/learn/docker-machine-basic-examples/)
+
