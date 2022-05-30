@@ -66,12 +66,25 @@
 - [식별과 비식별](./JPA/식별과%20비식별.markdown)
 - [엔티티, 값타입](./JPA/엔티티,값타입.markdown)
 - [프록시](./JPA/프록시.markdown)
+- [스프링데이터](./JPA/스프링데이터.markdown)
+- [준영속상태의지연로딩](./JPA/준영속상태의지연로딩.markdown)
 
 ----
 
 ## 🐋 [Docekr](./Docker/README.markdown)
-- [도커](./Docker/도커.markdown)
-- [networt](./Docker/network.markdown)
+
+- [도커](./도커.markdown)
+- [networt](./network.markdown)
+- [쿠버네티스](./kubernetes.markdown)
+- [도커머신](./도커머신.markdown)
+- [build 와 image 차이](./Compose_build와image_차이)
+
+### ✨ [Nginx](./Docker/Nginx/README.markdown)
+
+- [Nginx](./NGINX.markdown)
+- [Nginx_config](./Nginx_config.markdown)
+- [none_image](./none_image.markdown)
+- [로브밸런싱방식](./로드밸런싱방식.markdown)
 
 ----
 
@@ -93,6 +106,7 @@
 ## 🎇 [ETC](./ETC/README.markdown)
 - [AJAX](./ETC/AJAX.markdown)
 - [API](./ETC/API.markdown)
+- [CI_CD](./ETC/CI_CD.markdown)
 - [JS와AJAX관계](./ETC/JS와AJAX관계.markdown)
 - [LiveServer Issue](./ETC/LiveServer%20issue.markdown)
 - [Maven_vs_Gradle](./ETC/Maven_vs_Gradle.markdown)

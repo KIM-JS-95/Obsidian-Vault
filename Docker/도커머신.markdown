@@ -12,11 +12,10 @@ Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배�
 
 `docker-machine`의 목적은 애플리케이션을 위한 배포 환경을 만들고 실행되는 모든 서비스를 관리하려는 경우이다.
 
-연결하려는 VM의 경우 Azura, AWS 등과 같은 대상이 될 수 있아
+연결하려는 VM의 경우 Azura, AWS 등과 같은 대상이 될 수 있다.
 
 ![](https://www.macadamian.com/wp-content/uploads/2017/01/1-KO-vKqNqGk_8feDcpePvQQ.png.webp)
 
 #Reference
 
 - [What is docker-machine?](https://www.macadamian.com/learn/docker-machine-basic-examples/)
-
