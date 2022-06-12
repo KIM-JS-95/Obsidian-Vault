@@ -1,4 +1,4 @@
-# Docker in Docker
+# DinD DooD
 
 Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenkins container 내부에 Docker를 다시한번 설치해야 한다는 것을 알았다.
 
@@ -24,6 +24,12 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 
 호스트 Docker 계층에서 실행하는 방식으로 `docker.sock`을 통해 데이터가 호스트 Docker로 전달된어  형제(sibling) 컨테이너로 구성되어진다.
 
+```shell
+docker run -it -p 8080:8080 --name <container_name> \ 
+ * -v /var/run/docker.sock:/var/run/docker.sock
+-v <your worksspace> : /var/jenkins_home
+<image_name>:tag
+```
 
 - **호스트 OS와 이미지 공유 가능**
 - 이미지를 여러 번 저장하지 않아도 됩니다.
@@ -38,7 +44,7 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 
 ## DinD vs DooD
 
-그림에서 알 수 있듯이 사용자가 Container를 어디로 올리는 지에 따라 방향성이 다르다.
+그림에서 알 수 있듯이 사용자가 `Container`를 어디로 올리는 지에 따라 방향성이 다르다.
 
 `Jenkins`의 `Execute Shell`로 Docker를 실행한다면 Jenkins Container 내부에 실행되고 있는 것이다.
 
@@ -46,7 +52,7 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 사용자가 신경써야할 부분이 많다.
 
 
-## Error Log
+## DinD 사용지 발생하는 Error Log
 
 1. Docker 실행 및 연결 문제
 ```shell
