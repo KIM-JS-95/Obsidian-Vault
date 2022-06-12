@@ -14,22 +14,22 @@
 Page<Member> findByName(String name, Pageable pageable);
 
 // count 쿼리 사용 안 함
-List<Member> findByName(String name, Pageable pageable);
+        List<Member> findByName(String name, Pageable pageable);
 
 ```
 
 ## 페이지 조건 걸기
 ```java
-PageRequest pageRequest 
+PageRequest pageRequest
         = new PageRequest(0, 10, new Sort(Direction.DESC, "name"));
 
-Page<Member> result = memberRepository.findByNameStartingWith("김", PageRequest);
+        Page<Member> result = memberRepository.findByNameStartingWith("김", PageRequest);
 
-List<Member> members = result.get.getContent();
+        List<Member> members = result.get.getContent();
 
-int totalPages = result.getTotalPages();
+        int totalPages = result.getTotalPages();
 
-boolean hasNextPage - result.hasNextPage();
+        boolean hasNextPage - result.hasNextPage();
 
 ```
 
@@ -38,10 +38,10 @@ boolean hasNextPage - result.hasNextPage();
 
 ```java
   @Transactional
-    public List<GallaryDto> getBoardlist(Integer pageNum) {
+public List<GallaryDto> getBoardlist(Integer pageNum) {
 
         Page<Gallary> page = gallaryRepository.findAll(PageRequest.of(pageNum-1, PAGE_POST_COUNT,
-                        Sort.by(Sort.Direction.ASC,"createDate")));
+        Sort.by(Sort.Direction.ASC,"createDate")));
 
 
         List<Gallary> boards = page.getContent();
@@ -49,10 +49,10 @@ boolean hasNextPage - result.hasNextPage();
         List<GallaryDto> boardDtoList = new ArrayList<>();
 
         for(Gallary board : boards){
-            boardDtoList.add(this.convertEntityToDto(board));
+        boardDtoList.add(this.convertEntityToDto(board));
         }
 
         return boardDtoList;
-    }
+        }
 
 ```

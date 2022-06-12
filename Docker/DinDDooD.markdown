@@ -20,9 +20,11 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 
 ## DooD
 
+> `docker.sock`은 클라이언트 데몬 간의 통신을 위한 엔드포인트를 말한다.
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkG4Ee%2Fbtro6axPOc6%2FuO8iaewJXKDifLnx0y1Oxk%2Fimg.png)
 
 호스트 Docker 계층에서 실행하는 방식으로 `docker.sock`을 통해 데이터가 호스트 Docker로 전달된어  형제(sibling) 컨테이너로 구성되어진다.
+
 
 ```shell
 docker run -it -p 8080:8080 --name <container_name> \ 
@@ -39,8 +41,13 @@ docker run -it -p 8080:8080 --name <container_name> \
 - 런타임에 더 큰 유연성을 허용합니다.
 - **젠킨스(sudo) 사용자가 접두사 docker없이 실행되도록 허용한다.**
 
-### [Jenkins + DooD - Docker Hub](https://hub.docker.com/r/psharkey/jenkins-dood)
+여기서 핵심은 `docker.sock` `Volume`을 공유하는 것으로 컨테이너 내부에서도 저장된 Host 환경을 공유 할 수 구성한다는 점이다.
 
+
+기본적으로 `/var/run/docker.sock` 파일을 통해 접근되는 IPC 소켓이지만, 도커는 네크워크 주소와 systemd 방식의 소켓으로 사용되는 TCP 소켓도 지원한다.
+
+
+### [Jenkins + DooD - Docker Hub](https://hub.docker.com/r/psharkey/jenkins-dood)
 
 ## DinD vs DooD
 
@@ -50,6 +57,8 @@ docker run -it -p 8080:8080 --name <container_name> \
 
 `DinD`를 사용하는 주된 장점은 **애플리케이션 실행을 위한 격리된 환경을 제공**한다는 점 이지만 단점으로 `보안성`과 `디스크 용량`의 문제를 가지고 있어
 사용자가 신경써야할 부분이 많다.
+
+
 
 
 ## DinD 사용지 발생하는 Error Log
