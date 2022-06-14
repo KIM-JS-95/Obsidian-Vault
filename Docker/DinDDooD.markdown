@@ -6,7 +6,7 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 
 도커가 컨테이너를 구성하기 위해서는 크게 2가지가 있음을 알았고 이를 정리한다.
 
-## DinD
+## 🦐 DinD
 
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXLxyZ%2FbtroVr1OTaR%2F27VHLse6YwjcoEZ4vFqqj1%2Fimg.png)
 
@@ -18,7 +18,7 @@ Jenkins CI 를 구성하는 중 Docker-compose를 실행하기 위해서는 Jenk
 
 ### [Jenkins + DInD - Docker Hub](https://hub.docker.com/r/jpetazzo/dind)
 
-## DooD
+## 🦐 DooD
 
 > `docker.sock`은 클라이언트 데몬 간의 통신을 위한 엔드포인트를 말한다.
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkG4Ee%2Fbtro6axPOc6%2FuO8iaewJXKDifLnx0y1Oxk%2Fimg.png)
@@ -49,7 +49,7 @@ docker run -it -p 8080:8080 --name <container_name> \
 
 ### [Jenkins + DooD - Docker Hub](https://hub.docker.com/r/psharkey/jenkins-dood)
 
-## DinD vs DooD
+## 🦐 DinD vs DooD
 
 그림에서 알 수 있듯이 사용자가 `Container`를 어디로 올리는 지에 따라 방향성이 다르다.
 
@@ -61,7 +61,7 @@ docker run -it -p 8080:8080 --name <container_name> \
 
 
 
-## DinD 사용지 발생하는 Error Log
+## 🦐 DinD 사용지 발생하는 Error Log
 
 1. Docker 실행 및 연결 문제
 ```shell

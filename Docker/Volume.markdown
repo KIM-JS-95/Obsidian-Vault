@@ -1,15 +1,16 @@
 
 # 🐋 Volume and Mount 🐋
 
-`Volume` 및 `bind Mount` 를 사용하면 호스트 시스템과 컨테이너 간에 파일을 공유할 수 있으므로 컨테이너가 중지된 후에도 데이터를 유지할 수 있습니다.
+`Volume` 및 `bind Mount` 를 사용하면 호스트 시스템과 컨테이너 간에 파일을 공유할 수 있으므로 컨테이너가 중지된 후에도 데이터를 유지할 수 있다.
 
 
-## Volume
-`Volume`은 Docker 컨테이너에서 생성하고 사용하는 데이터를 유지하기 위한 기본 메커니즘이다.
+## 🦐 Volume
+
+> Volume 은 Docker 컨테이너에서 생성하고 사용하는 데이터를 유지하기 위한 기본 메커니즘이다.
 
 `Volume`이 Docker에 의해 관리되고 호스트 시스템의 핵심 기능에서 분리된다는 점을 제외하고는 `바인딩 마운트`가 작동하는 방식과 유사하다.
 
-다만 `바인드 마운트`는 **호스트 시스템의 디렉토리 구조 및 OS 에 따라** 다르지만 `볼륨`은 Docker에서 완전히 관리된다다.
+다만 `바인드 마운트`는 **호스트 시스템의 디렉토리 구조 및 OS 에 따라** 다르지만 `볼륨`은 Docker에서 완전히 관리된다.
 
 ### 장점
 
@@ -28,7 +29,7 @@
 
 ![](https://docs.docker.com/storage/images/types-of-mounts-volume.png)
 
-## Bind Mount
+## 🦐 Bind Mount
 바인드 마운트를 사용하면 호스트 시스템 의 파일 또는 디렉토리가 절대 경로로 컨테이너에 마운트되며`Volume`에 비해 굉장히 제한적이다.
 
 우수한 성능을 가지고 있지만 특정 디렉토리 구조를 사용할 수 있는 호스트 시스템의 파일 시스템에 의존한다.
@@ -36,9 +37,9 @@
 ![](https://docs.docker.com/storage/images/types-of-mounts-bind.png)
 
 
-## tmpfs 마운트
+## 🦐 tmpfs 마운트
 
-Linux에서 Docker를 실행하는 경우 세 번째 옵션인 tmpfs마운트가 있다. 
+Linux에서 Docker를 실행하는 경우 세 번째 옵션인 `tmpfs 마운트`가 있다. 
 
 마운트 를 사용하여 컨테이너를 생성할 때 `tmpfs컨테이너`는 컨테이너의 쓰기 가능 계층 외부에 파일을 생성할 수 있다.
 
@@ -52,6 +53,6 @@ Linux에서 Docker를 실행하는 경우에만 사용할 수 있습니다.**
 
 
 
-# Reference
-- [](https://stackoverflow.com/questions/34357252/docker-data-volume-vs-mounted-host-directory)
-- [](https://docs.docker.com/storage/bind-mounts/)
+# 🐋 Reference
+- [docker data volume vs mounted host directory - StackOverFlow](https://stackoverflow.com/questions/34357252/docker-data-volume-vs-mounted-host-directory)
+- [docker docs](https://docs.docker.com/storage/bind-mounts/)

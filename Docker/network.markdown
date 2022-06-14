@@ -6,7 +6,7 @@ Docker 컨테이너(container)는 격리된 환경에서 돌아가기 때문에 
 
 ![img.png](../images/img.png)
 
-## Driver (네트워크 종류)
+## 🦐 Driver (네트워크 종류)
 
 - bridge
   - 기본 네트워크 드라이버이다. `브리지 네트워크`는 일반적으로 애플리케이션이 통신이 필요한 독립 실행형 컨테이너에서 실행될 때 사용한다.
@@ -34,7 +34,7 @@ Docker 컨테이너(container)는 격리된 환경에서 돌아가기 때문에 
   - none스웜 서비스에는 사용할 수 없다.
 
 
-## network 명령어
+## 🦐 network 명령어
 ### 생성
   - docker network create <Option> [네트워크]
   
@@ -49,7 +49,7 @@ Docker 컨테이너(container)는 격리된 환경에서 돌아가기 때문에 
 ### 청소
   - docker network prune
 
-## 컨테이너 간 네트워킹
+## 🦐 컨테이너 간 네트워킹
 
 ### 테스트
     docker exec [컨테이너 1 혹은 IP] ping [컨테이너 2 혹은 IP]

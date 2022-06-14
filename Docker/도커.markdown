@@ -6,7 +6,7 @@
 * 다양한 컨테이너 이미지를 제공하여 진입장벽을 낮추고 외부 유저가 사용할 수 있다는 장점이 있다.
 
 
-## Container
+## 🦐 Container
 * 응용 프로그램의 종속성과 함께 응용 프로그램 자체를 캡술화 한것.
 * OS(Operating System)의 격리된 인스턴스 형태로 응용프로그램을 실행한다.
 
@@ -18,7 +18,7 @@
   - 
 - 종속성
 
-## Docker의 장점
+## 🦐 Docker의 장점
 
 * 호스트 OS에 있는 자원들을 공유하여 효율성 향상
 * 운영 환경의 변경으로 생기는 버그를 없앨 수 있는 `이식성 제공`
@@ -27,7 +27,7 @@
 
 ![](https://www.hanumoka.net/images/20181116-docker-docker-basic_1.png)
 
-## Container VS VM(가상 머신)
+## 🦐 Container VS VM(가상 머신)
 * 목적성
 * VM: 외부 환경을 완전하게 에뮬레이트
 * Container : 응용프로그램의 이식성, 독립성

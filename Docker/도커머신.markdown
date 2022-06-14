@@ -1,4 +1,4 @@
-# 도커머신
+# 🐋 도커머신 🐋
 
 컨테이너화된 애플리케이션이 있는 경우 Docker를 사용하여 로컬로 실행하거나 
 Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배포할 수 있어야 한다.**
@@ -8,7 +8,7 @@ Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배�
 ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F995158475E1D5BB70B)
 
 
-## 도커 머신의 목적
+## 🦐 도커 머신의 목적
 
 `docker-machine`의 목적은 애플리케이션을 위한 배포 환경을 만들고 실행되는 모든 서비스를 관리하려는 경우이다.
 
@@ -18,12 +18,12 @@ Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배�
 
 
 
-## 초기 설정 방법
+## 🦐 초기 설정 방법
 ### AWS Access Key 생성
 
 AWS EC2를 만들기 이전 개인 [AWS Access Key](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/id_credentials_access-keys.html) 를 먼저 만들어야한다.
 
-###Docker - AWS 프로비저닝 
+### Docker - AWS 프로비저닝 
 
 `create` 옵션에는 관리자를 인증하기 위한  2가지가 있다.
 
@@ -64,7 +64,7 @@ $ docker-machine ls
 ![img_2](https://user-images.githubusercontent.com/65659478/173469654-17b767e7-244f-46c8-ba2b-0fda33d662a4.png)
 
 
-## 후기
+## 🦐 후기
 
 지금까지 `AWS CLI`에 접근하기위해 `PUTTY`를 설치하거나 `AWS 자체 접속 기능`을 사용해 왔다.
 
@@ -78,7 +78,17 @@ AWS 접속을 위한 PUTTY를 설치하고 접속 과정에 많은 번거로움�
 `docker-machine`을 사용하게되면서 Docker 명령어만 알고있다면 정말 다루기 쉬웠고 `Docker - jenkins` 사용 목적으로 프로비저닝 한다면
 더할 나위 없이 좋은 선택이라고 생각한다.
 
+## 🦐 옵션
+```shell
+--amazonec2-instance-type  = 인스턴스 타입 설정 
+--amazonec2-open-port  = 포트 개방 (다중 개방을 원할시  [ --amazonec2-open-port 8000 --amazonec2-open-port 8080 ]) 
+--amazonec2-region  = 리전 설정 
+--amazonec2-root-size = 루트 디스크 사이즈 설정 (GB 단위) 
+--amazonec2-access-key = 엑세스키  
+--amazonec2-secret-key = 비밀키
+```
 
-#Reference
+# Reference
 
 - [What is docker-machine?](https://www.macadamian.com/learn/docker-machine-basic-examples/)
+- [도커머신으로 aws ec2에 프로비저닝 하기](https://sudarlife.tistory.com/entry/docker-machine-%EC%A0%95%EB%A6%AC-%EB%8F%84%EC%BB%A4-%EB%A8%B8%EC%8B%A0-%EC%9C%BC%EB%A1%9C-aws-ec2-%EC%97%90-%ED%94%84%EB%A1%9C%EB%B9%84%EC%A0%80%EB%8B%9D-%ED%95%98%EA%B8%B0)

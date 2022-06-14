@@ -2,7 +2,7 @@
 
 시스템이 정상적으로 운영됨을 확인하고 발생된 문제에 대한 디버깅을 효율적으로 관리하고자 한다면, 컨테이너 모니터링은 필수 이다.
 
-## 도커 기본 로깅
+## 🦐 도커 기본 로깅
 
 도커가 제공하는 기능으로 별도의 인자를 명시하지 ㅇ낳았거나 다른 로딩 SW를 설치하지 않았다면, `**.log`파일로 남긴다.
 
@@ -14,7 +14,7 @@ docker logs <Container Name>
 - STDOUT / STDERR 만 처리하므로 로그를 파일로만 기록할 수 있다.
 - 컨테이너가 운영중에 있다면 기본 로깅 기능은 log를 계속해서 기록하여 사용자의 디스크 용량을 잡아먹을 것이다.
 
-## ELK 를 이용한 로깅
+## 🦐 ELK 를 이용한 로깅
 
 ![제목 없음](https://user-images.githubusercontent.com/65659478/171559548-2abf6a69-08da-45b4-bb8c-8cee3d1e942c.png)
 
@@ -35,7 +35,7 @@ docker logs <Container Name>
 일레스틱서치 쿼리를 실행하고 결과를 다양한 차트로 시각화할 때 사용된다.
 
 
-## ELk + Logspout 설계
+## 🦐 ELk + Logspout 설계
 
 ![](https://miro.medium.com/max/1400/0*qxW9DS-RGveqqwBQ.png)
 
