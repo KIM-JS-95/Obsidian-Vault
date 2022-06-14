@@ -16,6 +16,69 @@ Linux 에서 **로컬로 실행할 뿐만 아니라 클라우드에 쉽게 배�
 
 ![](https://www.macadamian.com/wp-content/uploads/2017/01/1-KO-vKqNqGk_8feDcpePvQQ.png.webp)
 
+
+
+## 초기 설정 방법
+### AWS Access Key 생성
+
+AWS EC2를 만들기 이전 개인 [AWS Access Key](https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/id_credentials_access-keys.html) 를 먼저 만들어야한다.
+
+###Docker - AWS 프로비저닝 
+
+`create` 옵션에는 관리자를 인증하기 위한  2가지가 있다.
+
+- `Access Key / Secret Key` 옵션 입력으로 인증
+
+사용자 인증과 동시에 생성을 하는 간단한 방식이다.
+
+```shell
+docker-machine create --driver amazonec2 --amazonec2-access-key <Your Access Key> --amazonec2-secret-key <Your Secret Key>  aws-sandbox
+```
+
+- `aws/credentials` 을 이용하여 생성하는 방법
+
+이 방식은 해당 폴더에 접근하여 직접 입력하는 방식이지만 굉장히 복잡하다.
+
+[구성 및 자격 증명 파일 설정 - AWS](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-configure-files.html)
+
+```shell
+[default] 
+aws_access_key_id=AKI*******
+aws_secret_access_key=8T93C*******
+```
+
+```shell
+$ docker-machine create --driver amazonec2 aws-sandbox
+```
+
+- AWS EC2 생성 확인
+![img_1](https://user-images.githubusercontent.com/65659478/173469514-9839ad86-56cf-40ad-bfa9-e04c0ca018ee.png)
+
+
+- bash 로 확인
+
+```shell
+$ docker-machine ls
+```
+
+![img_2](https://user-images.githubusercontent.com/65659478/173469654-17b767e7-244f-46c8-ba2b-0fda33d662a4.png)
+
+
+## 후기
+
+지금까지 `AWS CLI`에 접근하기위해 `PUTTY`를 설치하거나 `AWS 자체 접속 기능`을 사용해 왔다.
+
+AWS 접속을 위한 PUTTY를 설치하고 접속 과정에 많은 번거로움이 따라왔고 
+
+네크워크가 조금이라도 불안정하면 접속이 끊어지는 상황이 발생하고는 했다.
+
+이러한 불편함에도 **패X캠퍼스, 국비학원, 부트캠프**에서 또한 이러한 방법으로 교육을 하겠지만 아마 `Docker`을 교육하기 위한 시간 부족 
+혹은 백엔드와 다른 분야(DevOps)이기 때문에 이렇게 교육하는 것일지도 모른다.
+
+`docker-machine`을 사용하게되면서 Docker 명령어만 알고있다면 정말 다루기 쉬웠고 `Docker - jenkins` 사용 목적으로 프로비저닝 한다면
+더할 나위 없이 좋은 선택이라고 생각한다.
+
+
 #Reference
 
 - [What is docker-machine?](https://www.macadamian.com/learn/docker-machine-basic-examples/)
