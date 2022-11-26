@@ -69,5 +69,5 @@ ex) "산에서 들개"
 
 
 # REFERENCE
-[딥러닝을 이용한 자연어 처리 입문](https://wikidocs.net/21692)
-[Elastic 가이드북](https://esbook.kimjmin.net/06-text-analysis/6.6-token-filter/6.6.4-ngram-edge-ngram-shingle#ngram)
+- [딥러닝을 이용한 자연어 처리 입문](https://wikidocs.net/21692)
+- [Elastic 가이드북](https://esbook.kimjmin.net/06-text-analysis/6.6-token-filter/6.6.4-ngram-edge-ngram-shingle#ngram)
