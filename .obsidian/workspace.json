@@ -1,0 +1,170 @@
+{
+  "main": {
+    "id": "54c06b5b4c24789c",
+    "type": "split",
+    "children": [
+      {
+        "id": "aacab1413b64c731",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fe0124685c8d183",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d3d9a3322f6e1a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e452a4a7fa8f0a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc700595299b8ae7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "35ed9ae1fe626e51",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "103f2544b98a6417",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4306099f3da6716f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2da2636d1a907e24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a4e0a696a89366d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dc2f4b0a4559527f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "99561b137bda6809",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fca8f153f40c3e64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "7fe0124685c8d183",
+  "lastOpenFiles": [
+    "interview/라인플러스.md",
+    "interview/넥슨코리아.md",
+    "무제 파일.md",
+    "interview/Interview c98cb73794144afc8b0e20d3fe96adbb.md",
+    "interview/무제 파일.md",
+    "TIL/Docker/배포개선.md",
+    "interview",
+    "TIL/readme.markdown~",
+    "TIL/4913",
+    "TIL/readme.markdown",
+    "TIL/Spring/디자인패턴/프록시_패턴.markdown",
+    "TIL/Spring/디자인패턴/팩터리_패턴.markdown",
+    "TIL/Spring/디자인패턴/탬플릿메서드_패턴.markdown",
+    "TIL/Spring/디자인패턴/탬플릿_콜백_패턴.markdown",
+    "TIL/Spring/디자인패턴/전략_패턴.markdown",
+    "TIL/Spring/디자인패턴/어댑터_패턴.markdown",
+    "TIL/Javascript/scrolling.md",
+    "TIL/Javascript/ExecutionContext.md",
+    "TIL/Javascript/closer.md",
+    "TIL/images/img.png",
+    "TIL/ETC/STP.md",
+    "images/img.png",
+    "Javascript/scrolling.md",
+    "Javascript/ExecutionContext.md",
+    "Javascript/closer.md",
+    "ETC/STP.md"
+  ]
+}

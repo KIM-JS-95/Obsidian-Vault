@@ -1,0 +1,98 @@
+
+ 
+# 스프링에서 디자인 패턴의 중요성
+
+`디자인 패턴`은 실제 개발 현장에서 비즈니스 요구 사항을 프로그래밍으로 처리하면서 만들어진 다양한 해결책 중에서 많은 사람들이
+인정한 가장 효율적인 예시를 정리한 패턴의 집합이다.
+
+##  템플릿 메서드 패턴 - 의존 역전 원칙(DIP)
+
+
+상위 클래스에 공통 로직을 수행하는 탬플릿 메서드와 하위 클래스에 오버라이딩을 강제하는 `추상 메서드` 
+또는 선택적으로 오버라이딩할 수 있는 `훅(Hook) 메서드`를 두는 패턴이다.
+
+### 템플릿 메서드 패턴 - 적용 후
+
+```java
+
+public abstract class Animal {
+    // 템플릿 메서드
+    public void playWithOwner() {
+        System.out.println("귀염둥이 이리온...");
+        play();
+        runSomething();
+        System.out.println("잘했어");
+    }
+
+    // 추상 메서드
+    abstract void play();
+
+    // Hook(갈고리) 메서드
+    void runSomething() {
+        System.out.println("꼬리 살랑 살랑~");
+    }
+}
+
+public class Dog extends Animal {
+    @Override
+        // 추상 메서드 오버라이딩
+    void play() {
+        System.out.println("멍! 멍!");
+    }
+
+    @Override
+        // Hook(갈고리) 메서드 오버라이딩
+    void runSomething() {
+        System.out.println("멍! 멍!~ 꼬리 살랑 살랑~");
+    }
+}
+
+public class Cat extends Animal {
+    @Override
+        // 추상 메서드 오버라이딩
+    void play() {
+        System.out.println("야옹~ 야옹~");
+    }
+
+    @Override
+        // Hook(갈고리) 메서드 오버라이딩
+    void runSomething() {
+        System.out.println("야옹~ 야옹~ 꼬리 살랑 살랑~");
+    }
+}
+
+public class Driver {
+    public static void main(String[] args) {
+        Animal bolt = new Dog();
+        Animal kitty = new Cat();
+
+        bolt.playWithOwner();
+
+        System.out.println();
+        System.out.println();
+
+        kitty.playWithOwner();
+    }
+}
+
+```
+![009](https://user-images.githubusercontent.com/65659478/159503391-d99b286a-15b4-46de-b1c4-9d109c436293.jpg)
+
+![008](https://user-images.githubusercontent.com/65659478/159503401-8dd232f2-bbce-474b-a858-212808f3dbb3.jpg)
+
+
+### 정리
+
+> 상위 클래스의 견본 메서드에서 하위 클래스가 오버라이딩 한 메서드를 호출하는 패턴
+
+|탬플릿 메서드 패턴의 구성 요소| 상위 클래스 |하위 클래스|
+|:---:|:---:|:---:|
+|템플릿 메서드<p> 공통 로직을 수행, 로직 중에 하위 클래스에서 오버라이딩한 추상 메서드 / 훅 메서드를 호출|playWithOwner()||
+|템플릿 메서드에서 호출하는 추상 메서드|play()|오버라이딩 <p>필수|
+|템플릿 메서드에서 호출하는 Hook 메서드 하위 클래스가 선택적으로 오버라이딩한다.|runSomething()|오버라이딩 <p> 선택|
+
+## 🧾 Reference
+- [깃헙 - 스프링 입문 교재](https://github.com/expert0226/oopinspring)
+- [책 - 스프링을 입문을 위한 자바 객체 지향의 원리와 이해](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=55641908)
+
+
