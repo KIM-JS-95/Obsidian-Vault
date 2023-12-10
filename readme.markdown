@@ -117,3 +117,5 @@
 
 
 ----
+
+(23.12.10) All DIRs are moved to Obsidian
