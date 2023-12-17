@@ -1,3 +1,0 @@
-# 🎆 Today I Learned 🎆
-
-## Spring
