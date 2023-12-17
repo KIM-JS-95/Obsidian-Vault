@@ -1,20 +1,20 @@
 {
   "main": {
-    "id": "54c06b5b4c24789c",
+    "id": "7624ea5ec5796f5d",
     "type": "split",
     "children": [
       {
-        "id": "37a8a2204d5ec666",
+        "id": "6ee0e2d24938f5e6",
         "type": "tabs",
         "children": [
           {
-            "id": "59dfde80fd1f98a7",
+            "id": "643c7ba08bc5e6c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/코드리뷰/후기.md",
-                "mode": "source",
+                "file": "TIL/DataBase/index.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "4d3d9a3322f6e1a7",
+    "id": "35741d6e7f1cf914",
     "type": "split",
     "children": [
       {
-        "id": "6e452a4a7fa8f0a6",
+        "id": "2b5437ff3c413d31",
         "type": "tabs",
         "children": [
           {
-            "id": "fc700595299b8ae7",
+            "id": "f17731730cf3ab2d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "35ed9ae1fe626e51",
+            "id": "ce55880fdc01d9ed",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "103f2544b98a6417",
+            "id": "621b492a409c4315",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "4306099f3da6716f",
+    "id": "d0311aa0d255e0d1",
     "type": "split",
     "children": [
       {
-        "id": "2da2636d1a907e24",
+        "id": "4d2941f39fced6dd",
         "type": "tabs",
         "children": [
           {
-            "id": "3a4e0a696a89366d",
+            "id": "2d53a755f7b38017",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/코드리뷰/후기.md",
+                "file": "TIL/DataBase/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "dc2f4b0a4559527f",
+            "id": "ebdc822da12e7688",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/코드리뷰/후기.md",
+                "file": "TIL/DataBase/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "99561b137bda6809",
+            "id": "89795b4d2e954b26",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +120,12 @@
             }
           },
           {
-            "id": "fca8f153f40c3e64",
+            "id": "5e3d52d950eeccb9",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/코드리뷰/후기.md"
+                "file": "TIL/DataBase/index.md"
               }
             }
           }
@@ -146,46 +146,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "fc700595299b8ae7",
+  "active": "643c7ba08bc5e6c7",
   "lastOpenFiles": [
-    "TIL/JPA/프록시.md",
-    "TIL/JPA/준영속상태의지연로딩.md",
-    "TIL/JPA/엔티티,값타입.md",
-    "TIL/JPA/식별과 비식별.md",
-    "TIL/JPA/스프링데이터JPA.md",
-    "TIL/JPA/상속관계매핑.md",
-    "TIL/JPA/단방향_양방향.md",
-    "TIL/JPA/README.md",
-    "TIL/JPA/Paging.md",
-    "TIL/JPA/ORM.md",
-    "TIL/JPA/OOP_query.md",
-    "TIL/JPA/JPQL.md",
-    "TIL/JPA/Hibernate.md",
-    "TIL/JPA/Context.md",
-    "TIL/ETC/클라우드_보안위협에_대비하는_방법.md",
-    "TIL/ETC/안전한_클라우드_환경조성방안.md",
-    "TIL/ETC/while_vs_for.md",
-    "TIL/ETC/URI_URL차이.md",
-    "TIL/ETC/STP's_5statments.md",
-    "TIL/ETC/Servlet_and_JSP.md",
-    "TIL/ETC/README.md",
-    "TIL/ETC/NGRAM_Algo.md",
-    "TIL/ETC/Maven_vs_Gradle.md",
-    "TIL/ETC/LiveServer issue.md",
-    "TIL/ETC/JS와AJAX관계.md",
-    "TIL/ETC/html_iframe.md",
-    "무제 파일.canvas",
-    "interview",
-    "TIL/readme.markdown~",
-    "TIL/4913",
-    "TIL/readme.markdown",
-    "TIL/Spring/디자인패턴/프록시_패턴.markdown",
-    "TIL/Spring/디자인패턴/팩터리_패턴.markdown",
-    "TIL/Spring/디자인패턴/탬플릿메서드_패턴.markdown",
-    "TIL/Spring/디자인패턴/탬플릿_콜백_패턴.markdown",
-    "TIL/Spring/디자인패턴/전략_패턴.markdown",
-    "TIL/Spring/디자인패턴/어댑터_패턴.markdown",
-    "TIL/images/img.png",
-    "images/img.png"
+    "TIL/DataBase/4913",
+    "TIL/DataBase/CTE.md",
+    "TIL/DataBase/index.md",
+    "[1].md",
+    "README.md",
+    "2023-12-13.md"
   ]
 }
