@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "54c06b5b4c24789c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b73c3f50cada3b3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a24090ab243d649",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4d3d9a3322f6e1a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e452a4a7fa8f0a6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc700595299b8ae7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "35ed9ae1fe626e51",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#스프링",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "103f2544b98a6417",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4306099f3da6716f",
+    "type": "split",
+    "children": [
+      {
+        "id": "2da2636d1a907e24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a4e0a696a89366d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dc2f4b0a4559527f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "99561b137bda6809",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fca8f153f40c3e64",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "8a24090ab243d649",
+  "lastOpenFiles": [
+    "README.md~",
+    "4913",
+    "무제 파일.canvas",
+    "README.md",
+    "2023-12-19.md",
+    "TIL/readme.md",
+    "TIL/Algorithm/DFS.md",
+    "TIL/ETC/Servlet_and_JSP.md",
+    "TIL/JPA/README.md",
+    "TIL/PHP/str_replaceVSstrtr.md",
+    "TIL/PHP/popup.md",
+    "TIL/PHP/PHP_Tag.md",
+    "TIL/JPA/JPQL.md",
+    "JPA/JPA.md",
+    "JPA",
+    "TIL/Spring/Basic/관점지향프로그래밍(AOP).md",
+    "Spring/SOLID원칙/README.markdown.md",
+    "Spring/SOLID원칙",
+    "Spring/디자인패턴/README.markdown.md",
+    "Spring/디자인패턴",
+    "Spring",
+    "Docker/Nginx/README.markdown.md",
+    "Docker/Nginx",
+    "Docker",
+    "TIL/코드리뷰/후기.md",
+    "TIL/JPA/프록시.md",
+    "TIL/JPA/준영속상태의지연로딩.md",
+    "TIL/JPA/엔티티,값타입.md",
+    "TIL/JPA/식별과 비식별.md",
+    "TIL/JPA/스프링데이터JPA.md",
+    "TIL/JPA/상속관계매핑.md",
+    "TIL/JPA/단방향_양방향.md",
+    "TIL/JPA/Paging.md",
+    "TIL/JPA/ORM.md",
+    "interview",
+    "TIL/readme.markdown~",
+    "TIL/4913",
+    "TIL/images/img.png",
+    "images/img.png"
+  ]
+}
