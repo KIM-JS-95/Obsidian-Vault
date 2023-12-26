@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "df6d3be7634736dd",
+        "id": "b8910bbd53282472",
         "type": "tabs",
         "children": [
           {
-            "id": "4f72a99b679451d6",
+            "id": "7e825bd43225ef5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/Docker/README.md",
-                "mode": "preview",
+                "file": "TIL/ETC/자료구조.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/Docker/README.md",
+                "file": "TIL/ETC/자료구조.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/Docker/README.md",
+                "file": "TIL/ETC/자료구조.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/Docker/README.md"
+                "file": "TIL/ETC/자료구조.md"
               }
             }
           }
@@ -146,12 +146,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4f72a99b679451d6",
+  "active": "7e825bd43225ef5b",
   "lastOpenFiles": [
+    "TIL/DataBase/index.md",
+    "ETC/자료구조.md",
+    "TIL/ETC/자료구조.md",
+    "ETC",
+    "TIL/Docker/README.md",
     "TIL/Docker/Nginx/README.md",
     "무제 파일.canvas",
     "2023-12-17.md",
-    "TIL/DataBase/index.md",
     "TIL/DataBase/4913",
     "TIL/DataBase/CTE.md",
     "[1].md",
