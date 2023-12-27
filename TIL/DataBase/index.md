@@ -26,19 +26,47 @@
 
 ** 때문에 MySql에서 PK가 지정된 테이블 생성과 동시에 클러스터 인덱스를 생성할 수 없다. **
 
+### 클러스터 인덱스 생성
+
+클러스터 인덱스의 특성을 살펴본다면 해당 속성에 <u>유일성을 가지며 NULL 값을 가져서는 안된다.</u>
+
+요점을 본다면 `KEY` 를 통해 클러스터 인덱스를 설정하는 방법은 2가지가 존재하게 된다.
+
+> 1. PRIMARY KEY 
+> 2. UNIQUE NOT NULL
+
+```mysql
+
+CREATE TABLE PK_Table (
+    id INT [PRIMARY KEY | UNIQUE NOT NULL],
+    이름 VARCHAR(50),
+    나이 INT,
+);
+
+```
+
 ### 보조 인덱스
 보조 인덱스는 클러스터와 달리 정렬의 특성이 없어 하나의 테이블에 ** 여러개** 를 생성할 수 있다.
-
 
 ```mysql
 CREATE TABLE 예제테이블 (
     id INT PRIMARY KEY,
-    이름 VARCHAR(50),
+    이름 VARCHAR(50) [UNIQUE | UNIQUE NULL],
     나이 INT,
-    INDEX 이름인덱스 (이름)
 );
 
 ```
+
+만일 한 테이블에 2가지 방식이 모두 선언되어 있다면 
+튜플의 정렬 우선순위는 `PRIMARY KEY`가 선언된 튜플이 우선순위가 된다.
+
+```mysql
+CREATE TABLE TEST_TABLE (
+    id INT PRIMARY KEY,
+    name VARCHAR UNIQUE NOT NULL
+);
+```
+
 
 두 인덱스 모두 데이터의 검색 속도 향상을 목적으로 존재하는 메커니즘 이지만
 
