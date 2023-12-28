@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b8910bbd53282472",
+        "id": "fc9885152ef6dad9",
         "type": "tabs",
         "children": [
           {
-            "id": "7e825bd43225ef5b",
+            "id": "5bef6deb9782106d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/ETC/자료구조.md",
+                "file": "TIL/ETC/API.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/ETC/자료구조.md",
+                "file": "TIL/ETC/API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/ETC/자료구조.md",
+                "file": "TIL/ETC/API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/ETC/자료구조.md"
+                "file": "TIL/ETC/API.md"
               }
             }
           }
@@ -146,13 +146,24 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "7e825bd43225ef5b",
+  "active": "5bef6deb9782106d",
   "lastOpenFiles": [
-    "TIL/DataBase/index.md",
-    "ETC/자료구조.md",
+    "TIL/ETC/ETC.md",
+    "TIL/Docker/Docker.md",
+    "TIL/Docker/도커.md",
+    "TIL/Docker/Compose_build와image_차이.md",
+    "TIL/코드리뷰/코드리뷰.md",
+    "TIL/Algorithm/Algorithm.md",
+    "TIL/DataBase/Data Base.md",
+    "TIL/DataBase/Union_UnionAll.md",
+    "TIL/DataBase/join_vs_subquery.md",
+    "TIL/DataBase/인덱스.md",
+    "TIL/images/클러스터인덱스.png",
+    "TIL/readme.md",
+    "TIL/DataBase/SPHINX.md",
     "TIL/ETC/자료구조.md",
+    "ETC/자료구조.md",
     "ETC",
-    "TIL/Docker/README.md",
     "TIL/Docker/Nginx/README.md",
     "무제 파일.canvas",
     "2023-12-17.md",
