@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fc9885152ef6dad9",
+        "id": "fd480358bf7ba4c9",
         "type": "tabs",
         "children": [
           {
-            "id": "5bef6deb9782106d",
+            "id": "84cc65cf6a42121a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/ETC/API.md",
+                "file": "TIL/Spring/Basic/스프링.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/ETC/API.md",
+                "file": "TIL/Spring/Basic/스프링.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/ETC/API.md",
+                "file": "TIL/Spring/Basic/스프링.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/ETC/API.md"
+                "file": "TIL/Spring/Basic/스프링.md"
               }
             }
           }
@@ -146,31 +146,38 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "5bef6deb9782106d",
+  "active": "84cc65cf6a42121a",
   "lastOpenFiles": [
+    "TIL/ETC/안전한_클라우드_환경조성방안.md",
+    "TIL/Spring/SPRING.md",
+    "TIL/DataBase/Data Base.md",
+    "TIL/Java/자바구조/자바.md",
+    "TIL/Java/JAVA.md",
+    "README.md",
+    "자바구조/자바프로그램구동.markdown.md",
+    "자바구조",
+    "TIL/Java/람다식.md",
+    "TIL/Java/자바구조/JAVA_Structure.md",
+    "TIL/JPA/JPA.md",
+    "TIL/Algorithm/Algorithm.md",
+    "무제 파일.canvas",
+    "TIL/Docker/로드밸런싱방식.md",
+    "TIL/Docker/NGINX.md",
+    "TIL/Docker/Nginx/README.md",
+    "TIL/Docker.md",
+    "TIL/ETC/API.md",
     "TIL/ETC/ETC.md",
     "TIL/Docker/Docker.md",
     "TIL/Docker/도커.md",
     "TIL/Docker/Compose_build와image_차이.md",
     "TIL/코드리뷰/코드리뷰.md",
-    "TIL/Algorithm/Algorithm.md",
-    "TIL/DataBase/Data Base.md",
     "TIL/DataBase/Union_UnionAll.md",
     "TIL/DataBase/join_vs_subquery.md",
     "TIL/DataBase/인덱스.md",
     "TIL/images/클러스터인덱스.png",
     "TIL/readme.md",
     "TIL/DataBase/SPHINX.md",
-    "TIL/ETC/자료구조.md",
-    "ETC/자료구조.md",
     "ETC",
-    "TIL/Docker/Nginx/README.md",
-    "무제 파일.canvas",
-    "2023-12-17.md",
-    "TIL/DataBase/4913",
-    "TIL/DataBase/CTE.md",
-    "[1].md",
-    "README.md",
-    "2023-12-13.md"
+    "TIL/DataBase/4913"
   ]
 }
