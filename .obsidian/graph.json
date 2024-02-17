@@ -1,11 +1,11 @@
 {
   "collapse-filter": true,
-  "search": "",
+  "search": "JPA",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:TIL/Algorithm  ",
@@ -67,6 +67,6 @@
   "repelStrength": 9.482421875,
   "linkStrength": 0,
   "linkDistance": 491,
-  "scale": 0.47948920283291424,
-  "close": false
+  "scale": 1.3147588514105948,
+  "close": true
 }

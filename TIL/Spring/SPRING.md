@@ -1,7 +1,7 @@
 # 🎆 INDEX 🎆
 
   - [스프링](Basic/스프링.md)
-  - [관점지향프로그래밍(AOP)](Basic/관점지향프로그래밍(AOP).md)
+  - [관점지향프로그래밍](관점지향프로그래밍.md)
   - [Advisor (งᓀ‸ᓂ)ง Aspect](Basic/Advisor_Aspect.md)
   - [@Autowire (งᓀ‸ᓂ)ง @Resource](Basic/Autowire_Resource.md)
   - [의존성 주입](Basic/의존성주입.md)

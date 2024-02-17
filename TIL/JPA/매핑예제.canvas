@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"5625c6c0089f8b7a","type":"text","text":"```java\n@Entity\npublic class User {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    \n    // User가 여러 개의 Contents를 가질 수 있음을 표현합니다.\n    @OneToMany(cascade = CascadeType.ALL, mappedBy = \"user\")\n    private List<Contents> contentsList;\n}\n```","x":-307,"y":-274,"width":407,"height":214,"color":"3"},
+		{"id":"bc841b94565f8b62","type":"text","text":"```java\n@Entity\npublic class Contents {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    \n    // Contents가 특정한 User에 속해 있음을 표현합니다.\n    @ManyToOne\n    @JoinColumn(name = \"user_id\")\n    private User user;\n}\n```","x":120,"y":-274,"width":375,"height":214,"color":"4"}
+	],
+	"edges":[]
+}
