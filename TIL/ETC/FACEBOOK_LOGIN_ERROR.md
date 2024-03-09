@@ -52,9 +52,9 @@
 FACEBOOK APP 생성을 완료했다면 기본으로 설정되어 있는 권한(Advanced access)은 `Email / Public_scope` 두 가지이다.
 그러나 경우에 따라 추가 정보가 필요하다면 Graph API 테스트를 통해 Standard access에서 Advance access로 전환 요청을 제시할 수 있다.
 
-![](/image/FBAccess.png)
+![](/image/auth_function.png)
 
-자사의 경우에 `성별 ~ 전화번호` 데이터가 필요했기에 API테스트를 진행하여권한을 추가 요청할 수 있었다. 
+자사의 경우에 `성별 ~ 전화번호` 데이터가 필요했기에 API테스트를 진행하여 권한을 추가 요청할 수 있었다. 
 (요청에 대한 검수는 대략 10일 이내이다.)
 
 [페이스북API_권한_요청](./FbAuthRequest.md)

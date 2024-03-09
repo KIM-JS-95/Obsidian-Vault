@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d8ebb870c3211de4",
+        "id": "e55e5e60b8225286",
         "type": "tabs",
         "children": [
           {
-            "id": "d4b65c03d21bfa55",
+            "id": "c917860f6a5fa84b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/JPA/JPA.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0739e337c344081e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TIL/JPA/식별과 비식별.md",
+                "file": "TIL/JPA/Paging.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/JPA/식별과 비식별.md",
+                "file": "TIL/JPA/Paging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/JPA/식별과 비식별.md",
+                "file": "TIL/JPA/Paging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/JPA/식별과 비식별.md"
+                "file": "TIL/JPA/Paging.md"
               }
             }
           }
@@ -159,20 +146,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0739e337c344081e",
+  "active": "c917860f6a5fa84b",
   "lastOpenFiles": [
-    "^36004e.md",
-    "TIL/JPA/식별과 비식별.md",
-    "TIL/JPA/JPA.md",
-    "TIL/JPA/Mapping.md",
-    "연관관계 주인(mappedBy).md",
-    "TIL/JPA/ORM.md",
-    "TIL/JPA/매핑예제.canvas",
-    "TIL/images/클러스터인덱스.png",
     "TIL/JPA/상속관계매핑.md",
-    "TIL/JPA/Context.md",
+    "TIL/JPA/스프링데이터JPA.md",
+    "TIL/JPA/JPA.md",
+    "TIL/JPA/식별과비식별.md",
+    "JPA/상속관계매핑.md",
+    "JPA",
+    "TIL/Java/Vector_vs_ArrayList_vs_LinkedList.md",
+    "스레드_특성.md",
+    "TIL/Java/JAVA.md",
+    "TIL/JPA/ORM.md",
+    "TIL/JPA/준영속상태의지연로딩.md",
+    "TIL/Spring/SPRING.md",
+    "TIL/JPA/OOP_query.md",
+    "TIL/ETC/FbAuthRequest.md",
+    "TIL/JPA/Mapping.md",
+    "TIL/JPA/매핑예제.canvas",
     "TIL/ETC/FACEBOOK_LOGIN_ERROR.md",
+    "Image/auth_function.png",
+    "Image/addtester.png",
     "Image/FBAccess.png",
+    "Image/tester_app.png",
+    "Image/role.png",
+    "TIL/JPA/엔티티,값타입.md",
+    "^36004e.md",
+    "연관관계 주인(mappedBy).md",
+    "TIL/images/클러스터인덱스.png",
+    "TIL/JPA/Context.md",
     "TIL/DataBase/인덱스.md",
     "Image/무제 파일.md",
     "Image",
@@ -181,16 +183,6 @@
     "TIL/DataBase/CTE.md",
     "TIL/DataBase/join_vs_subquery.md",
     "TIL/JPA/Hibernate.md",
-    "TIL/Spring/Basic/Advisor_Aspect.md",
-    "TIL/Spring/Basic/Autowire_Resource.md",
-    "TIL/Spring/SPRING.md",
-    "TIL/Spring/Basic/관점지향프로그래밍.md",
-    "TIL/Spring/Basic/스프링.md",
-    "TIL/Spring/Basic/스프링역전제어.md",
-    "TIL/Spring/Basic/의존성주입.md",
-    "TIL/Spring/Basic/README.md",
-    "TIL/Spring/Basic/@Component_SingleTone.md",
-    "README.md",
     "자바구조",
     "ETC",
     "TIL/DataBase/4913"

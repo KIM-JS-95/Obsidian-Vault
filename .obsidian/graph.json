@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "JPA",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -8,65 +8,23 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:TIL/Algorithm  ",
+      "query": "file:JPA",
       "color": {
         "a": 1,
         "rgb": 14048348
-      }
-    },
-    {
-      "query": "path:TIL/DataBase  ",
-      "color": {
-        "a": 1,
-        "rgb": 14069084
-      }
-    },
-    {
-      "query": "path:TIL/Docker  ",
-      "color": {
-        "a": 1,
-        "rgb": 2753012
-      }
-    },
-    {
-      "query": "path:TIL/ETC  ",
-      "color": {
-        "a": 1,
-        "rgb": 6084188
-      }
-    },
-    {
-      "query": "path:TIL/Java  ",
-      "color": {
-        "a": 1,
-        "rgb": 6084269
-      }
-    },
-    {
-      "query": "path:TIL/JPA  ",
-      "color": {
-        "a": 1,
-        "rgb": 6073814
-      }
-    },
-    {
-      "query": "path:TIL/Spring  ",
-      "color": {
-        "a": 1,
-        "rgb": 12312327
       }
     }
   ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.53474934895833,
-  "lineSizeMultiplier": 2.63234456380208,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
   "collapse-forces": true,
-  "centerStrength": 0.350056966145833,
-  "repelStrength": 9.482421875,
-  "linkStrength": 0,
-  "linkDistance": 491,
-  "scale": 1.3147588514105948,
-  "close": true
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.0352844724823254,
+  "close": false
 }

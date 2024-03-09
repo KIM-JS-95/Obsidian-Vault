@@ -1,22 +1,6 @@
 # 🍃 JPA를 위한 Spring Data
 
 ## Spring Data?
-    
-    Spring Data’s mission is to provide a familiar and consistent, 
-    Spring-based programming model for data access while still retaining the special traits of the underlying data store.
-    
-    It makes it easy to use data access technologies, relational and non-relational databases, map-reduce frameworks, 
-    and cloud-based data services. This is an umbrella project which contains many subprojects that are specific to a given database. 
-    
-    The projects are developed by working together with many of the companies and developers that are behind these exciting technologies.
-
-    Spring Data의 사명은 친숙하고 일관된 서비스를 제공하는 것입니다.
-    기본 데이터 저장소의 특수 특성을 유지하면서 데이터 액세스를 위한 스프링 기반 프로그래밍 모델입니다.
-    
-    데이터 액세스 기술, 관계형 및 비관계형 데이터베이스, 지도 축소 프레임워크를 쉽게 사용할 수 있습니다.
-    클라우드 기반 데이터 서비스를 제공합니다. 이것은 지정된 데이터베이스와 관련된 많은 하위 프로젝트를 포함하는 상위 프로젝트입니다.
-    
-    이 프로젝트는 이러한 흥미로운 기술의 배후에 있는 많은 회사 및 개발자들과 협력하여 개발됩니다.
 
 ### Features
 
