@@ -73,7 +73,7 @@ AWS는 API 서비스 간에 높은 결합도를 보이는데, 이는 폐쇄성�
 
 정리하면 API 요청 시 유저의 Access / Secret key를 요구하는데, 이는 IAM에 대한 정보이며 해당 IAM 권한에 `S3 Object Storage` / `AWS Transcribe`가 추가가 되어 있어야 사용할 수 있다.
 
-![IAM이미지](/Image/STT_IAM)
+![IAM이미지](/TIL/images/STT_IAM.png)
 
 처리 방식은 sync / async 방식을 제공하며 요청 결과는 S3 에 저장된다. 
 
@@ -92,11 +92,131 @@ Request.php 파일에서 미디어 주소와 callback 주소를 기입하여 API
 
 **외부CDN을 사용하는 기업 입장에서는 AWS를 대체할 수 있는 좋은 대안이 될 것이다.**
 
-<script src="https://gist.github.com/KIM-JS-95/175f62d2b72fabf786f42c02b5955503.js"></script>
-<script src="https://gist.github.com/KIM-JS-95/da74938d985bebc40bbeb9f4b86c68da.js"></script>
+```PHP
+<?php
+ $audio_url ='{Your media URL can access}';
+ $response = req_url($audio_url, 'async');
+ 
+ function req_url($url, $completion){
+     $object = (object)[
+         'language' => 'ko-KR',
+         'completion' => $completion,
+         'url' => $url,
+ 		'diarization.enable'=>false,
+ 		'resultToObs'=>false,
+ 		'format'=>'JSON'
+ 	    	'callback'=>'https://{your_domain}/clova_callback.php',
+ 		// Add parameters If you want
+ 		// 'callback' => 'https://{your domain}/clova_callback.php?name=Jhon_mike'
+     ];
+     return execute('/recognizer/url', $object);
+ }
+ 
+ 
+ function execute($uri, $object){
+   $secret = '{Clova_secret}';
+   $invoke_url = '{Clova_secret}';
+   
+     try {
+         $ch = curl_init($invoke_url . $uri);
+         curl_setopt($ch, CURLOPT_POST, true);
+         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($object));
+         curl_setopt($ch, CURLOPT_VERBOSE, true);
+         curl_setopt($ch, CURLOPT_TIMEOUT, 600);
+         
+ 		    $headers = ['Content-Type: application/json', 'X-CLOVASPEECH-API-KEY: ' . $secret];
+         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+       
+         $response = curl_exec($ch);
+         $err = curl_error($ch);
+         curl_close($ch);
+ 
+         if ($err) {
+             echo 'cURL Error #:' . $err;
+             return $err;
+         }
+         return $response;
+     } catch (Exception $E) {
+         echo 'Response: ' . $E . '\n';
+         return $E->lastResponse;
+     }
+ }
+?>
+```
+[gitgubgist - clova_callback.php](https://gist.github.com/KIM-JS-95/da74938d985bebc40bbeb9f4b86c68da)
 
-<iframe src="https://gist.github.com/KIM-JS-95/da74938d985bebc40bbeb9f4b86c68da.js"></iframe>
 
+```PHP
+<?
+$name = $_GET['name']; // Jhon_mike
+$jsonData = file_get_contents('php://input');
+$response = json_decode($response, true);
+$transcript_id = $response["token"];
+
+if($response['result'] == 'COMPLETED'){
+	$vtt_content = json_to_vtt($response);
+	$storate_dir = "transcription/".date("Y/m");
+	$filename=buffer_upFtp($transcript_id, $storate_dir, $vtt_content , ".vtt");
+}else{
+	$mgs = "Transcript Not Complete.";
+	STT_WriteLog($transcript_id, $mgs);
+	exit;
+}
+
+function json_to_vtt($json_data) {
+	$segments = $json_data["segments"];
+	$vtt_content = "WEBVTT\n\n";
+
+	foreach ($segments as $index => $segment) {
+		$start_time = $segment["start"] / 1000;
+		$end_time = $segment["end"] / 1000;
+		$text = $segment["text"];
+
+		$start_time_str = format_time($start_time);
+		$end_time_str = format_time($end_time);
+
+		$vtt_content .= $index + 1 . "\n";
+		$vtt_content .= $start_time_str . " --> " . $end_time_str . "\n";
+		$vtt_content .= $text . "\n\n";
+	}
+
+	return $vtt_content;
+}
+
+function format_time($seconds) {
+	$hours = floor($seconds / 3600);
+	$seconds %= 3600;
+	$minutes = floor($seconds / 60);
+	$seconds %= 60;
+	$milliseconds = ($seconds - floor($seconds)) * 1000;
+	return sprintf("%02d:%02d:%02d.%03d", $hours, $minutes, floor($seconds), $milliseconds);
+}
+
+function buffer_upFtp($token, $storate_dir, $file_buffer, $type){
+	global $_SE;
+	try{
+		$client=connectS3($_SE['script']);
+		$rst = $client->putObject([
+			'Bucket' => "mobile",
+			'Key' => '<Your save S3_ROOT>',
+			'ContentType' => $type,
+			'Body' => $file_buffer,
+		]);
+	}catch (Exception $e){
+		$msg = $e->getMessage();
+		STT_WriteLog($token, $msg);
+		return false;
+	}
+	return true;
+}
+
+/// Add function what you want ....
+?>
+```
+[gitgubgist - clova_transcribe.php](https://gist.github.com/KIM-JS-95/175f62d2b72fabf786f42c02b5955503)
 
 ## AssemblyAI
 
@@ -111,6 +231,117 @@ JAVA, Python, Ruby, GO, PHP 코드를 사용할 수 있는 자체 API를 운용�
 PHP의 경우 Webhooks 요청은 body에 적으면 요청할 수 있다. 
 **(API 문서에는 찾을 수 없으니 참고)**
 
-<script src="https://gist.github.com/KIM-JS-95/41c440181cc566d48d412ddadeb85f1e.js"></script>
-<script src="https://gist.github.com/KIM-JS-95/5a037ea401bcb4b95764d706db7d8c0b.js"></script>
- 
+```PHP
+<?php
+/*-----------------------------------------------------------------------------------------
+	- 이름 : assemblyAI_transcribe.php
+	- Reference Site:
+		[assemblyAI]: https://www.assemblyai.com/
+		[webhook]: https://www.assemblyai.com/docs/getting-started/webhooks
+-----------------------------------------------------------------------------------------*/
+
+$audio_url ="{accessible media doamain}";
+
+// 1. 자막생성
+$transcript_id = createSubtitle($audio_url);
+
+function createSubtitle($audio_url){
+	$headers = array(
+		"authorization: ".'{assembly_key}',  // AssemblyAI API key
+		"content-type: application/json"
+	);
+
+	$data = array(
+		"audio_url" => $audio_url,
+		"language_code"=>"ko",
+		'webhook_url' => 'https://{your domain}/assemblyAI_callback.php'
+		// Add parameters If you want
+		// 'webhook_url' => 'https://{your domain}/assemblyAI_callback.php'?name=Jhon_mike
+	);
+
+	$transcript_endpoint = "https://api.assemblyai.com/v2/transcript";
+	$curl = curl_init($transcript_endpoint);
+	curl_setopt($curl, CURLOPT_POST, true);
+	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
+	curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+	$response = curl_exec($curl);
+	$response = json_decode($response, true);
+	curl_close($curl);
+	return $response['id'];
+}
+?>
+```
+
+[gitgubgist - assemblyAI_transcribe.php](https://gist.github.com/KIM-JS-95/41c440181cc566d48d412ddadeb85f1e)
+
+```PHP
+<?
+$name = $_GET['name']; // Jhon_mike
+$jsonData = file_get_contents('php://input');
+$json_data = json_decode($jsonData, true);
+
+if($json_data["status"]="completed"){
+	$transcript_id = $json_data['transcript_id'];
+	$response = getSubtitleFile($transcript_id);
+
+	if(preg_match('/^WEBVTT/i', $response)){
+		$storate_dir = "/transcription/".date("Y/m");
+		$filename=buffer_upFtp($transcript_id, $storate_dir, $response,".vtt");
+	}else{
+		$response = json_decode($response, true);
+		$mgs = $response['error'];
+		STT_WriteLog($transcript_id, $mgs);
+		return false;
+	}
+	return true;
+
+}else{
+	STT_WriteLog($transcript_id, "{$json_data['error']}");
+	return false;
+}
+
+function getSubtitleFile($transcript_id, $fileFormat='vtt'){
+	global $_SE;
+
+	$headers = array(
+		"authorization: ".$_SE['assembly_key'],
+		"content-type: application/json"
+	);
+
+    $url = "https://api.assemblyai.com/v2/transcript/{$transcript_id}/vtt";
+    $curl = curl_init();
+    curl_setopt_array($curl, [
+        CURLOPT_URL => $url,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HTTPHEADER => $headers
+    ]);
+
+    $response = curl_exec($curl); // 성공 -> vtt / 실패 -> json
+	curl_close($curl);
+
+	return $response;
+}
+
+function buffer_upFtp($token, $storate_dir, $file_buffer, $type){
+	global $_SE;
+	$_FILES_NAME = $token.$type;
+	try{
+		$client=connectS3($_SE['script']);
+		$rst = $client->putObject([
+			'Bucket' => "mobile",
+			'Key' => '{Your save S3_Root}'.$_FILES_NAME,
+			'ContentType' => $type,
+			'Body' => $file_buffer,
+		]);
+	}catch (Exception $e){
+		$msg = $e->getMessage();
+		STT_WriteLog($token, $msg);
+		return false;
+	}
+	return true;
+}
+?>
+```
+(gitgubgist - assemblyAI_callback.php)[https://gist.github.com/KIM-JS-95/5a037ea401bcb4b95764d706db7d8c0b]
