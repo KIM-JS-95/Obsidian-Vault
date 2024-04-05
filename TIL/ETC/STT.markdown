@@ -93,7 +93,9 @@ Request.php 파일에서 미디어 주소와 callback 주소를 기입하여 API
 **외부CDN을 사용하는 기업 입장에서는 AWS를 대체할 수 있는 좋은 대안이 될 것이다.**
 
 <script src="https://gist.github.com/KIM-JS-95/175f62d2b72fabf786f42c02b5955503.js"></script>
-<script src="https://gist.github.com/KIM-JS-95/ da74938d985bebc40bbeb9f4b86c68da.js"></script>
+<script src="https://gist.github.com/KIM-JS-95/da74938d985bebc40bbeb9f4b86c68da.js"></script>
+
+<iframe src="https://gist.github.com/KIM-JS-95/da74938d985bebc40bbeb9f4b86c68da.js"></iframe>
 
 
 ## AssemblyAI
