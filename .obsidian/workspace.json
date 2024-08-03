@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/JPA/Paging.md",
+                "file": "TIL/JPA/Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TIL/JPA/Paging.md",
+                "file": "TIL/JPA/Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TIL/JPA/Paging.md",
+                "file": "TIL/JPA/Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TIL/JPA/Paging.md"
+                "file": "TIL/JPA/Mapping.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   "active": "c917860f6a5fa84b",
   "lastOpenFiles": [
     "TIL/JPA/상속관계매핑.md",
+    "TIL/JPA/Mapping.md",
+    "TIL/JPA/준영속상태의지연로딩.md",
+    "TIL/JPA/Paging.md",
     "TIL/JPA/스프링데이터JPA.md",
     "TIL/JPA/JPA.md",
     "TIL/JPA/식별과비식별.md",
@@ -158,11 +161,9 @@
     "스레드_특성.md",
     "TIL/Java/JAVA.md",
     "TIL/JPA/ORM.md",
-    "TIL/JPA/준영속상태의지연로딩.md",
     "TIL/Spring/SPRING.md",
     "TIL/JPA/OOP_query.md",
     "TIL/ETC/FbAuthRequest.md",
-    "TIL/JPA/Mapping.md",
     "TIL/JPA/매핑예제.canvas",
     "TIL/ETC/FACEBOOK_LOGIN_ERROR.md",
     "Image/auth_function.png",
@@ -182,7 +183,6 @@
     "TIL/DataBase/Cluster.md",
     "TIL/DataBase/CTE.md",
     "TIL/DataBase/join_vs_subquery.md",
-    "TIL/JPA/Hibernate.md",
     "자바구조",
     "ETC",
     "TIL/DataBase/4913"
