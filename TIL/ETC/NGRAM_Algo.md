@@ -1,8 +1,5 @@
 # Ngram Algorithm
 
-`SPHINX` SQL를 서비스를 준비하면서 스핑크스가 가진 특이한 검색 방법에 고민을 많이했다.
-
-
 ## N-GRAM 개념
 
 `N-gram`은 통계학 기반의 언어 모델중 하나로 다음 단어를 예측할 때 문장에서의 모든 단어를 고려하지 않고 특정 단어(TOKEN)의 개수(N)만 고려한다.
@@ -16,17 +13,35 @@ ex) “산에서 들개 떼를 만났다” 등산 사고 민원 예고 울렸�
 |3|Trigram|“산에서 들개 떼를 / 만났다” 등산 사고 / 민원 예고 울렸다|
 |4|4-gram|“산에서 들개 떼를 만났다” / 등산 사고 민원 예고 / 울렸다|
 
+```java
+public class NGramGenerator {
+    public static List<String> generateNGrams(String text, int n) {
+        List<String> ngrams = new ArrayList<>();
+        String[] words = text.split(" "); // 공백 기준으로 단어 분리
+        
+        if (n > words.length) {
+            return ngrams; // 단어 개수가 N보다 작으면 빈 리스트 반환
+        }
+        
+        for (int i = 0; i <= words.length - n; i++) {
+            StringBuilder ngram = new StringBuilder();
+            for (int j = 0; j < n; j++) {
+                if (j > 0) ngram.append(" ");
+                ngram.append(words[i + j]);
+            }
+            ngrams.add(ngram.toString());
+        }
+        
+        return ngrams;
+    }
+```
+
 ## N-GRAM 고질적 문제
 
-검색 속도만 봐도 알수 있듯, 단순한 할고리즘을 적용하여 검색 속도가 빠른편에 속한다.
+알고리즘을 적용할 경우 검색 속도는 개선되며 어떤 언어로든 구현할 수 있지만
+반대로 의도하지 않은 검색 데이터가 검색될 수 도 있다.
 
-또한 어떤 언어로든 구현할 수 있는 정도의 알고리즘으로 적용하기가 쉽다.
-
-이러한 이점과는 반대로 검색 서비스 구현에 있어서는 지나칠 수 없는 큰 문제를 가지고 있다.
-
-좋게 말하면 "검색 누락이 없다." 이지만 다르게 말하면 "의도하지 않은 정보도 등장한다." 일것이다.
-
-실제 서비스에 적용하는 단계에 있어서는 정확한 그리고 의도한 결과가 나타나야 좋지만 `N-GRAM` 방식은 가능한 모두 가져다 준다.
+실제 서비스에 적용하는 단계에 있어서는 정확한 그리고 의도한 결과가 나타나야 좋지만 `N-gram` 방식은 가능한 모두 가져다 준다.
 
 > 너가 뭘 좋아할지 몰라 다 준비했어.
 
@@ -63,7 +78,8 @@ ex) "산에서 들개"
 
 ## TOKEN을 늘리는 것이 항상 좋은 방향일까?
 
-딥러닝 문서에서는 N이 커진다 하여 좋은 결과를 보이지 못한다고 말한다.
+딥러닝 문서에서는 N이 커진다 하여 항상 좋은 결과를 보여주지 못한다고 말한다.
+
 이를 `Trade-off`라고 하며 가장 좋은 결과를 보기 위해서는 N의 값을 1~4에서 지정하는 것이 가장 좋다고 한다.
 
 
