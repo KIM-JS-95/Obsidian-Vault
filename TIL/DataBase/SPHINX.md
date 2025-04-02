@@ -83,17 +83,14 @@ SELECT * FROM STUDENT
 
 Mysql 에서 `Match function`를 사용할 수 없는 것은 아니다.
 
-그러나 필수 조건으로 해당 컬럼은 full-text 타임이 선언되어야하지만 스핑크스의 경우 조건 없이도 사용할 수 있다.
+그러나 필수 조건으로 해당 컬럼은 full-text 타임이 선언 되어야하지만 스핑크스의 경우 조건 없이도 사용할 수 있다.
 
-그러나 스핑크스에서는 Like 구문을 사용할 수 없고 대신 Match 구문만을 사용할 수 있다.
+그러나 SPHINX에서는 `Like` 구문을 사용할 수 없고 대신 `Match` 구문만을 사용할 수 있다.
 
 
 ## 정말로 빠를까?
 
 [Mysql vs Sphinx speed Test](https://www.percona.com/blog/2009/04/19/talking-mysql-to-sphinx/)
-
-이 둘에 대한 테스트 결과를 많은 문서에서 찾아 볼 수 있다.
-
 
 >Now on performance
 > 
