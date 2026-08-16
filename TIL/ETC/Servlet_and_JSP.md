@@ -5,7 +5,11 @@ date:   2022-02-09 12:05:21 +0800
 tags: Spring Web
 color: rgb(154,133,255)
 subtitle: Servlet JSP
---- 
+---
+
+[[0-ETC MOC.md]] · #etc <!-- moc-nav -->
+
+ 
 ### 🚀 JSP(JavaServer Pages)
 
 JSP는 HTML내에 자바 코드를 삽입하여 웹 서버에서 동적으로 웹 페이지를 생성하여 웹 브라우저에 돌려주는 

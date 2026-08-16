@@ -1,3 +1,5 @@
+[[0-ETC MOC.md]] · #etc <!-- moc-nav -->
+
 # Ngram Algorithm
 
 `SPHINX` SQL를 서비스를 준비하면서 스핑크스가 가진 특이한 검색 방법에 고민을 많이했다.

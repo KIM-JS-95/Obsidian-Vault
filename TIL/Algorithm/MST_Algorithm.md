@@ -1,3 +1,5 @@
+[[0-Algorithm MOC.md]] · #algorithm <!-- moc-nav -->
+
 # Spanning Tree
 
 그래프 내의 모든 정점을 포함하는 트리를 의미

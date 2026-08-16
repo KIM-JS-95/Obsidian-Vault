@@ -4,22 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "b73c3f50cada3b3e",
+        "id": "9280a6d845b5ffbb",
         "type": "tabs",
         "children": [
           {
-            "id": "8a24090ab243d649",
+            "id": "0e4322d557418934",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "TIL/Kubernetes/01-애플리케이션_설계와_빌드.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "01-애플리케이션_설계와_빌드"
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -38,8 +41,13 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
             }
           },
           {
@@ -48,13 +56,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#스프링",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "검색"
             }
           },
           {
@@ -62,10 +72,29 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          },
+          {
+            "id": "959163cdfb133699",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "무제.base",
+                "viewName": "표"
+              },
+              "icon": "lucide-table",
+              "title": "무제"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +114,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +121,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "백링크"
             }
           },
           {
@@ -102,10 +132,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "나가는 링크"
             }
           },
           {
@@ -115,8 +146,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
             }
           },
           {
@@ -125,66 +160,74 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "개요"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 373.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8a24090ab243d649",
+  "active": "0e4322d557418934",
   "lastOpenFiles": [
-    "README.md~",
-    "4913",
+    "TIL/Kubernetes/0-Kubernetes MOC.md",
+    "TIL/TIL MOC.md",
+    "2026-08-16.md",
+    "TIL/JPA/Context.md",
+    "TIL/JPA/0-JPA MOC.md",
+    "TIL/Kubernetes/05-서비스와_네트워킹.md",
+    "무제.base",
+    "무제 1.canvas",
+    "TIL/ETC/0-ETC MOC.md",
+    "무제.canvas",
+    "TIL/Kubernetes/02-애플리케이션_배포.md",
+    "TIL/Kubernetes/04-환경설정과_보안.md",
+    "TIL/Kubernetes/03-관찰가능성과_유지보수.md",
+    "TIL/Kubernetes/01-애플리케이션_설계와_빌드.md",
+    "TIL/Kubernetes/00-CKAD 학습로드맵.md",
+    "_to_delete/Kubernetes-old/00-CKA 학습로드맵.md",
+    "_to_delete/Kubernetes-old/04-스토리지.md",
+    "_to_delete/Kubernetes-old/03-서비스와_네트워킹.md",
+    "_to_delete/Kubernetes-old/02-워크로드와_스케줄링.md",
+    "TIL/Kubernetes/CKA-참고(선택)/05-트러블슈팅.md",
+    "TIL/Kubernetes/CKA-참고(선택)/01-클러스터_아키텍처.md",
+    "TIL/Kubernetes/CKA-참고(선택)/00a-핵심_컴포넌트_복습노트.md",
+    "_to_delete/Kubernetes-old",
+    "TIL/Kubernetes/CKA-참고(선택)",
+    "TIL/Kubernetes/01-클러스터_아키텍처.md",
+    "_to_delete/PHP/str_replaceVSstrtr.md",
+    "_to_delete/PHP/popup.md",
+    "_to_delete/PHP/PHP_Tag.md",
+    "_to_delete/PHP/0-PHP MOC.md",
+    "_to_delete/PHP",
+    "_to_delete",
+    "TIL/Kubernetes/00a-핵심_컴포넌트_복습노트.md",
+    "TIL/Kubernetes/00-CKA 학습로드맵.md",
+    "TIL/Kubernetes",
+    "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc.134888979783536",
+    "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc",
+    "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc.137567726526320",
+    "_mcp-obsidian-rag/__pycache__",
     "무제 파일.canvas",
-    "README.md",
-    "2023-12-19.md",
-    "TIL/readme.md",
-    "TIL/Algorithm/DFS.md",
-    "TIL/ETC/Servlet_and_JSP.md",
-    "TIL/JPA/README.md",
-    "TIL/PHP/str_replaceVSstrtr.md",
-    "TIL/PHP/popup.md",
-    "TIL/PHP/PHP_Tag.md",
-    "TIL/JPA/JPQL.md",
-    "JPA/JPA.md",
-    "JPA",
-    "TIL/Spring/Basic/관점지향프로그래밍(AOP).md",
-    "Spring/SOLID원칙/README.markdown.md",
-    "Spring/SOLID원칙",
-    "Spring/디자인패턴/README.markdown.md",
-    "Spring/디자인패턴",
-    "Spring",
-    "Docker/Nginx/README.markdown.md",
-    "Docker/Nginx",
-    "Docker",
-    "TIL/코드리뷰/후기.md",
-    "TIL/JPA/프록시.md",
-    "TIL/JPA/준영속상태의지연로딩.md",
-    "TIL/JPA/엔티티,값타입.md",
-    "TIL/JPA/식별과 비식별.md",
-    "TIL/JPA/스프링데이터JPA.md",
-    "TIL/JPA/상속관계매핑.md",
-    "TIL/JPA/단방향_양방향.md",
-    "TIL/JPA/Paging.md",
-    "TIL/JPA/ORM.md",
-    "interview",
-    "TIL/readme.markdown~",
-    "TIL/4913",
     "TIL/images/img.png",
     "images/img.png"
   ]

@@ -5,7 +5,11 @@ date:   2021-07-02 14:05:21 +0800
 tags: SpringBoot JWT
 color: rgb(154,133,255)
 subtitle: SPRING 보안 인증 구현
---- 
+---
+
+[[0-Spring-Security MOC.md]] · #spring/security <!-- moc-nav -->
+
+ 
 ## 목표
 @Controller 페이지를 개설 후 JWT 토큰이 발급된 사용자만이 접근할 수 있도록
 기능을 구성하여 접근 권한 관리하도록 한다.

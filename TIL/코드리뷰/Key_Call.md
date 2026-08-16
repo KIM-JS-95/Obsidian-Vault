@@ -1,3 +1,5 @@
+[[0-코드리뷰 MOC.md]] · #code-review <!-- moc-nav -->
+
 # 매번 까먹는 HashMap Key, Value 호출
 
 해시맵은 Key값으로 Value 값을 호출하는 것은 가능하지만 그 반대는 지원하지 않는다.

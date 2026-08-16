@@ -1,3 +1,5 @@
+[[0-Algorithm MOC.md]] · #algorithm <!-- moc-nav -->
+
 ## 목표
  앞뒤가 똑같은 숫자를 확인해보자
 

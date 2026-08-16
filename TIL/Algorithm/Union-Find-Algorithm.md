@@ -1,3 +1,5 @@
+[[0-Algorithm MOC.md]] · #algorithm <!-- moc-nav -->
+
 ## 2021-06-13-Algo-REVIEW
 
 ### Graph Algo?

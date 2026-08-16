@@ -1,0 +1,33 @@
+/* Graph View — AnuPpuccin 테마에 맞춘 커스텀 스타일 */
+/* Settings → Appearance → CSS snippets 에서 켜야 적용됩니다 */
+
+/* 그래프 뷰 패널: 테마의 둥근 카드 느낌에 맞춤 */
+.graph-view.workspace-leaf-content {
+  border-radius: var(--radius-l, 12px);
+  overflow: hidden;
+}
+
+/* 좌측 상단 필터/포스 컨트롤 패널도 테마 카드 스타일에 맞춤 */
+.graph-controls {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-m, 8px);
+  border: 1px solid var(--background-modifier-border);
+  backdrop-filter: blur(6px);
+}
+
+/* 노드/링크 색상을 하드코딩하지 않고 현재 테마(AnuPpuccin)의
+   accent·text 변수를 그대로 따라가게 해서, 나중에 accent 컬러나
+   Catppuccin 플레이버를 바꿔도 그래프뷰가 자동으로 맞춰집니다 */
+.theme-dark, .theme-light {
+  --graph-line: var(--background-modifier-border);
+  --graph-node: var(--text-muted);
+  --graph-node-unresolved: var(--text-faint);
+  --graph-node-focused: var(--color-accent);
+  --graph-node-tag: var(--color-accent-2);
+  --graph-text: var(--text-normal);
+}
+
+/* 살짝 채도 보정 — 어두운 배경에서 노드가 또렷하게 보이도록 */
+.graph-view.workspace-leaf-content canvas {
+  filter: saturate(1.08);
+}

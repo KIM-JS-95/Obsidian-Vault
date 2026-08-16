@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Wasp"
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "graph-view-theme"
+  ]
 }

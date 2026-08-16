@@ -5,7 +5,11 @@ date:   2022-03-13 12:05:21 +0800
 tags: 면접 자바 SOLID
 color: rgb(98,170,255)
 subtitle: OOD 5대원칙
---- 
+---
+
+[[0-SOLID원칙 MOC.md]] · #spring/solid <!-- moc-nav -->
+
+ 
 
 # 🚀 OOP를 올바르계 설계해 나가는 원칙
     

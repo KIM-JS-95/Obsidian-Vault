@@ -1,3 +1,7 @@
+[[0-Docker MOC.md]] · #docker <!-- moc-nav -->
+
+> 2026-08-15: CKAD 취득을 목표로 한 상세 학습 노트를 시작했습니다 → [[0-Kubernetes MOC.md|☸️ Kubernetes/CKAD MOC]]
+
 # 🐋 쿠버네티스?
 
 쿠버네티스(Kubernetes)는 컨테이너화 된 애플리케이션의 대규모 배포, 
