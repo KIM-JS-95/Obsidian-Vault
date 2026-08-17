@@ -189,6 +189,7 @@
   },
   "active": "0e4322d557418934",
   "lastOpenFiles": [
+    "TIL/Spring/디자인패턴/싱글톤_서비스_패턴(K8s).md",
     "TIL/Kubernetes/0-Kubernetes MOC.md",
     "TIL/TIL MOC.md",
     "2026-08-16.md",
@@ -221,7 +222,6 @@
     "_to_delete/PHP",
     "_to_delete",
     "TIL/Kubernetes/00a-핵심_컴포넌트_복습노트.md",
-    "TIL/Kubernetes/00-CKA 학습로드맵.md",
     "TIL/Kubernetes",
     "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc.134888979783536",
     "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc",
