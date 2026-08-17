@@ -11,7 +11,7 @@
 | 1 | 애플리케이션 설계와 빌드 | 20% | 🟡 진행 중 | [[01-애플리케이션_설계와_빌드]] |
 | 2 | 애플리케이션 배포 | 20% | 🟡 진행 중 | [[02-애플리케이션_배포]] |
 | 3 | 관찰가능성과 유지보수 | 15% | 🟡 진행 중 | [[03-관찰가능성과_유지보수]] |
-| 4 | 환경, 설정과 보안 (최고 비중) | 25% | ⬜ 예정 | [[04-환경설정과_보안]] |
+| 4 | 환경, 설정과 보안 (최고 비중) | 25% | 🟡 진행 중 (Namespace 완료) | [[04-환경설정과_보안]] |
 | 5 | 서비스와 네트워킹 | 20% | 🟡 진행 중 | [[05-서비스와_네트워킹]] |
 
 ## 학습 순서 메모
@@ -26,9 +26,10 @@
   - Probe 3종 + 로그/디버깅 명령어 → ③ 관찰가능성과 유지보수
   - Service 기초 → ⑤ 서비스와 네트워킹
   - 클러스터 아키텍처(kubeadm/HA/etcd/RBAC) 등 CKA 전용 내용은 `CKA-참고(선택)/` 폴더로 이동 (참고용 보관, CKAD 범위 아님)
+- 2026-08-17: ④ 환경/설정/보안 도메인 착수 — Namespace(격리 단위, namespaced vs cluster-scoped 리소스, DNS 스코프) 정리.
 
 ## 다음 세션에서 할 일
-- [ ] ④ 환경/설정/보안: ConfigMap, Secret, ResourceQuota/requests·limits, ServiceAccount, SecurityContext 학습 시작 (비중 최고)
+- [ ] ④ 환경/설정/보안: ConfigMap, Secret, ResourceQuota/requests·limits, ServiceAccount, SecurityContext 학습 계속 (비중 최고, Namespace는 완료)
 - [ ] ① Job/CronJob, 볼륨(emptyDir 등) 채우기
 - [ ] ② 배포 전략(블루/그린, 카나리) 실습 예제, Helm/Kustomize 기초
 - [ ] ③ API deprecation, CLI 모니터링 도구
