@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9280a6d845b5ffbb",
+        "id": "06a1607d3fee7ee5",
         "type": "tabs",
         "children": [
           {
-            "id": "0e4322d557418934",
+            "id": "1bbcd5cba27b0d7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TIL/Kubernetes/01-애플리케이션_설계와_빌드.md",
+                "file": "TIL/Kubernetes/02-애플리케이션_배포.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-애플리케이션_설계와_빌드"
+              "title": "02-애플리케이션_배포"
             }
           }
         ],
@@ -187,11 +187,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0e4322d557418934",
+  "active": "1bbcd5cba27b0d7e",
   "lastOpenFiles": [
-    "TIL/Spring/디자인패턴/싱글톤_서비스_패턴(K8s).md",
+    "TIL/Kubernetes/CKA-참고(선택)/02-워크로드와_스케줄링.md",
     "TIL/Kubernetes/0-Kubernetes MOC.md",
     "TIL/TIL MOC.md",
+    "TIL/Kubernetes/01-애플리케이션_설계와_빌드.md",
+    "TIL/Kubernetes/02-애플리케이션_배포.md",
+    "TIL/Spring/디자인패턴/싱글톤_서비스_패턴(K8s).md",
+    "TIL/Spring/디자인패턴/싱글톤_패턴.md",
     "2026-08-16.md",
     "TIL/JPA/Context.md",
     "TIL/JPA/0-JPA MOC.md",
@@ -200,10 +204,8 @@
     "무제 1.canvas",
     "TIL/ETC/0-ETC MOC.md",
     "무제.canvas",
-    "TIL/Kubernetes/02-애플리케이션_배포.md",
     "TIL/Kubernetes/04-환경설정과_보안.md",
     "TIL/Kubernetes/03-관찰가능성과_유지보수.md",
-    "TIL/Kubernetes/01-애플리케이션_설계와_빌드.md",
     "TIL/Kubernetes/00-CKAD 학습로드맵.md",
     "_to_delete/Kubernetes-old/00-CKA 학습로드맵.md",
     "_to_delete/Kubernetes-old/04-스토리지.md",
@@ -218,10 +220,8 @@
     "_to_delete/PHP/str_replaceVSstrtr.md",
     "_to_delete/PHP/popup.md",
     "_to_delete/PHP/PHP_Tag.md",
-    "_to_delete/PHP/0-PHP MOC.md",
     "_to_delete/PHP",
     "_to_delete",
-    "TIL/Kubernetes/00a-핵심_컴포넌트_복습노트.md",
     "TIL/Kubernetes",
     "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc.134888979783536",
     "_mcp-obsidian-rag/__pycache__/server.cpython-310.pyc",
